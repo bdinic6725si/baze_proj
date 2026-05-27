@@ -47,7 +47,7 @@ public class AuthForms {
 
             JButton btnLogin = new JButton("Prijavi se");
             btnLogin.setBackground(new Color(70, 130, 180));
-            btnLogin.setForeground(Color.WHITE);
+            btnLogin.setForeground(Color.BLACK);
             gbc.gridx = 0; gbc.gridy = 3; gbc.gridwidth = 2;
             panel.add(btnLogin, gbc);
 
@@ -146,7 +146,7 @@ public class AuthForms {
 
             JButton btnRegister = new JButton("Registruj se");
             btnRegister.setBackground(new Color(70, 130, 180));
-            btnRegister.setForeground(Color.WHITE);
+            btnRegister.setForeground(Color.BLACK);
             gbc.gridx = 0; gbc.gridy = 4; gbc.gridwidth = 2;
             panel.add(btnRegister, gbc);
 

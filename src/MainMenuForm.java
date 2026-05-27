@@ -237,7 +237,7 @@ class PromeniSesijuForm extends JFrame {
         JPanel btnPanel = new JPanel(new FlowLayout());
         JButton btnSacuvaj = new JButton("Sačuvaj izmene");
         btnSacuvaj.setBackground(new Color(70, 180, 100));
-        btnSacuvaj.setForeground(Color.WHITE);
+        btnSacuvaj.setForeground(Color.BLACK);
         JButton btnOtkazi = new JButton("Otkaži");
         btnPanel.add(btnSacuvaj);
         btnPanel.add(btnOtkazi);

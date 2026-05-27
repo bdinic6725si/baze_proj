@@ -1114,3 +1114,36 @@ INSERT INTO Opservacija (ID_Sesije, ID_Nebeskog_Objekta, Broj_Ekspozicija, Izmer
 (98,  5,   8,  4.101, 16.0, 'slab',          'IceCube - loša detekcija'),
 (99,  8,  14,  8.611, 31.5, 'dobar',         'M87 varijabilnost'),
 (100, 6,  20, 11.093, 21.5, 'dobar',         'Kepler sistem analiza');
+
+ALTER TABLE Alat ADD COLUMN Naziv VARCHAR(100) AFTER ID_Alata;
+
+UPDATE Alat SET Naziv = 'Refraktor Zeiss 150mm'         WHERE ID_Alata = 1;
+UPDATE Alat SET Naziv = 'Echelle Spektrometar ESO'       WHERE ID_Alata = 2;
+UPDATE Alat SET Naziv = 'Apogee CCD Alta U47'            WHERE ID_Alata = 3;
+UPDATE Alat SET Naziv = 'Schmidt-Cassegrain 250mm'       WHERE ID_Alata = 4;
+UPDATE Alat SET Naziv = 'FLI CCD ML16200'                WHERE ID_Alata = 5;
+UPDATE Alat SET Naziv = 'Lhires III Spektrometar'        WHERE ID_Alata = 6;
+UPDATE Alat SET Naziv = 'Parabolična Antena 25m'         WHERE ID_Alata = 7;
+UPDATE Alat SET Naziv = 'FPGA Signal Procesor V2'        WHERE ID_Alata = 8;
+UPDATE Alat SET Naziv = 'Parabolična Antena 15m'         WHERE ID_Alata = 9;
+UPDATE Alat SET Naziv = 'Ritchey-Chretien 400mm'         WHERE ID_Alata = 10;
+UPDATE Alat SET Naziv = 'HARPS Spektrometar'             WHERE ID_Alata = 11;
+UPDATE Alat SET Naziv = 'e2v CCD231-84'                  WHERE ID_Alata = 12;
+UPDATE Alat SET Naziv = 'Gregorijanska Antena 305m'      WHERE ID_Alata = 13;
+UPDATE Alat SET Naziv = 'GPU Signal Procesor A100'       WHERE ID_Alata = 14;
+UPDATE Alat SET Naziv = 'IceCube DOM Detektor #1'        WHERE ID_Alata = 15;
+UPDATE Alat SET Naziv = 'IceCube DOM Detektor #2'        WHERE ID_Alata = 16;
+UPDATE Alat SET Naziv = 'FPGA Signal Procesor V3'        WHERE ID_Alata = 17;
+UPDATE Alat SET Naziv = 'Keck I Teleskop 10m'            WHERE ID_Alata = 18;
+UPDATE Alat SET Naziv = 'HIRES Spektrometar Keck'        WHERE ID_Alata = 19;
+UPDATE Alat SET Naziv = 'LRIS CCD Kamera'                WHERE ID_Alata = 20;
+UPDATE Alat SET Naziv = 'Auger Površinski Detektor #1'   WHERE ID_Alata = 21;
+UPDATE Alat SET Naziv = 'Auger Signal Procesor'          WHERE ID_Alata = 22;
+UPDATE Alat SET Naziv = 'Effelsberg Antena 100m'         WHERE ID_Alata = 23;
+UPDATE Alat SET Naziv = 'PSRIX Signal Procesor'          WHERE ID_Alata = 24;
+UPDATE Alat SET Naziv = 'Cassegrain 300mm'               WHERE ID_Alata = 25;
+UPDATE Alat SET Naziv = 'Andor iKon-L CCD'               WHERE ID_Alata = 26;
+UPDATE Alat SET Naziv = 'DADOS Spektrometar'             WHERE ID_Alata = 27;
+UPDATE Alat SET Naziv = 'Moravian G4 CCD'                WHERE ID_Alata = 28;
+UPDATE Alat SET Naziv = 'ROACH2 Signal Procesor'         WHERE ID_Alata = 29;
+UPDATE Alat SET Naziv = 'Newton 200mm Teleskop'          WHERE ID_Alata = 30;
