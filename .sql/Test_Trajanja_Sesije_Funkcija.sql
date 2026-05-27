@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE FUNCTION Test_Trajanje_Sesije()
 RETURNS BOOLEAN
 DETERMINISTIC
@@ -25,4 +27,8 @@ BEGIN
         RETURN FALSE;
     END IF;
 
-END
+END	//
+
+DELIMITER ;
+
+-- Funkcija koja testira da li su ispravno izracunate sesije i njihova trajanja

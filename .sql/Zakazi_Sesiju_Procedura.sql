@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE Zakazi_Sesiju(
     IN p_ID_Izvodjenja  INT,
     IN p_ID_Lab         INT,
@@ -44,4 +46,7 @@ BEGIN
         
     END IF;
 
-END
+END //
+DELIMITER ;
+
+-- Procedura koja zakazuje sesiju pomocu transakcije

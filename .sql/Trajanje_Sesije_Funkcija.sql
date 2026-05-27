@@ -1,6 +1,9 @@
+DELIMITER //
+
 CREATE FUNCTION Trajanje_Sesije(p_ID_Sesije INT)
 RETURNS INT
 DETERMINISTIC
+
 BEGIN
     DECLARE v_Pocetak   TIME;
     DECLARE v_Kraj      TIME;
@@ -19,4 +22,8 @@ BEGIN
     END IF;
     
     RETURN v_Trajanje;
-END
+END	//
+
+DELIMITER ;
+
+-- Funkcija koja racuna trajanje sesija

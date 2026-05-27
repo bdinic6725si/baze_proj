@@ -9,4 +9,6 @@ FROM Istrazivac i
 JOIN Dizajner_Eksperimenta de ON de.ID_Istrazivaca = i.ID_Istrazivaca
 JOIN Izvodjac_Eksperimenta ie ON ie.ID_Istrazivaca = i.ID_Istrazivaca
 GROUP BY i.ID_Istrazivaca, i.Naziv, i.Kvalifikacija
-HAVING COUNT(DISTINCT ie.ID_Izvodjenja) > 1;
+HAVING COUNT(DISTINCT ie.ID_Izvodjenja) > 0;
+
+-- View koji prikazuje Statistike o svim Istrazivacima, koliko su eksperimenata dizajnirali i koliko su ih izveli

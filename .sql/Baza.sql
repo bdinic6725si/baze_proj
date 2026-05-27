@@ -486,7 +486,6 @@ INSERT INTO Dizajner_Eksperimenta (ID_Istrazivaca, ID_Eksperimenta, Uloga_Dizajn
 (7, 22, 'Co-Investigator'),
 (8, 23, 'Principal Investigator'),
 (9, 24, 'Principal Investigator'),
-(10, 25, 'Co-Investigator'),
 (11, 26, 'Principal Investigator'),
 (12, 27, 'Principal Investigator'),
 (13, 28, 'Co-Investigator'),
