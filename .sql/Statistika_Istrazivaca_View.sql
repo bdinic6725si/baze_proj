@@ -1,14 +1,18 @@
+DROP VIEW IF EXISTS Statistika_Istrazivaca;
+
 CREATE VIEW Statistika_Istrazivaca AS
 SELECT
     i.ID_Istrazivaca,
     i.Naziv              AS Ime_Istrazivaca,
     i.Kvalifikacija,
-    COUNT(DISTINCT de.ID_Eksperimenta)  AS Broj_Dizajniranih_Eksperimenata,
-    COUNT(DISTINCT ie.ID_Izvodjenja)    AS Broj_Izvodjenja
+    COUNT(DISTINCT de_eks.ID_Eksperimenta) AS Broj_Dizajniranih_Eksperimenata,
+    COUNT(DISTINCT ie.ID_Izvodjenja)       AS Broj_Izvodjenja
 FROM Istrazivac i
-JOIN Dizajner_Eksperimenta de ON de.ID_Istrazivaca = i.ID_Istrazivaca
-JOIN Izvodjac_Eksperimenta ie ON ie.ID_Istrazivaca = i.ID_Istrazivaca
+LEFT JOIN Dizajner_Eksperimenta de  ON de.ID_Istrazivaca  = i.ID_Istrazivaca
+LEFT JOIN Dizajnirao_Eks de_eks     ON de_eks.ID_Dizajnera = de.ID_Dizajnera
+LEFT JOIN Izvodjac_Eksperimenta ie  ON ie.ID_Istrazivaca  = i.ID_Istrazivaca
 GROUP BY i.ID_Istrazivaca, i.Naziv, i.Kvalifikacija
-HAVING COUNT(DISTINCT ie.ID_Izvodjenja) > 0;
+HAVING COUNT(DISTINCT ie.ID_Izvodjenja) > 0
+    OR COUNT(DISTINCT de_eks.ID_Eksperimenta) > 0;
 
 -- View koji prikazuje Statistike o svim Istrazivacima, koliko su eksperimenata dizajnirali i koliko su ih izveli
