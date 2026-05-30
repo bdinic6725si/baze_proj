@@ -1,3 +1,5 @@
+DROP DATABASE IF EXISTS astronomija;
+
 CREATE DATABASE astronomija
 CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci;
@@ -89,6 +91,7 @@ CREATE TABLE Alat (
   ID_Alata          INT PRIMARY KEY AUTO_INCREMENT,
   ID_Lab            INT NOT NULL,
   ID_Tipa           INT,
+  Naziv 			Varchar(100),
   Datum_Nabavke     DATE,
   Datum_Proizvodnje DATE,
   FOREIGN KEY (ID_Lab)  REFERENCES Laboratorija(ID_Lab),
@@ -161,6 +164,43 @@ CREATE TABLE Opservacija (
   Napomena            TEXT,
   FOREIGN KEY (ID_Sesije)           REFERENCES Sesija(ID_Sesije),
   FOREIGN KEY (ID_Nebeskog_Objekta) REFERENCES Nebeski_Objekat(ID_Nebeskog_Objekta)
+);
+
+CREATE TABLE t_o_Objektu (
+    ID_Teorije          INT,
+    ID_Nebeskog_Objekta INT,
+    Opis_Veze           TEXT,
+    PRIMARY KEY (ID_Teorije, ID_Nebeskog_Objekta),
+    FOREIGN KEY (ID_Teorije)          REFERENCES Teorija(ID_Teorije),
+    FOREIGN KEY (ID_Nebeskog_Objekta) REFERENCES Nebeski_Objekat(ID_Nebeskog_Objekta)
+);
+
+CREATE TABLE Op_O_Objektu (
+    ID_Opservacije      INT,
+    ID_Nebeskog_Objekta INT,
+    Napomena            TEXT,
+    PRIMARY KEY (ID_Opservacije, ID_Nebeskog_Objekta),
+    FOREIGN KEY (ID_Opservacije)      REFERENCES Opservacija(ID_Opservacije),
+    FOREIGN KEY (ID_Nebeskog_Objekta) REFERENCES Nebeski_Objekat(ID_Nebeskog_Objekta)
+);
+
+CREATE TABLE U_Labu (
+    ID_Resursa  INT,
+    ID_Lab      INT,
+    Kolicina    DECIMAL(10,2),
+    Jedinica    VARCHAR(20),
+    Napomena    TEXT,
+    PRIMARY KEY (ID_Resursa, ID_Lab),
+    FOREIGN KEY (ID_Resursa) REFERENCES Resurs(ID_Resursa),
+    FOREIGN KEY (ID_Lab)     REFERENCES Laboratorija(ID_Lab)
+);
+
+CREATE TABLE Koriscen_U_Eks (
+    ID_Eksperimenta INT,
+    ID_Alata        INT,
+    PRIMARY KEY (ID_Eksperimenta, ID_Alata),
+    FOREIGN KEY (ID_Eksperimenta) REFERENCES Eksperiment(ID_Eksperimenta),
+    FOREIGN KEY (ID_Alata)        REFERENCES Alat(ID_Alata)
 );
 
 INSERT INTO Istrazivac (Naziv, Kvalifikacija, Email) VALUES
@@ -354,37 +394,37 @@ INSERT INTO Nebeski_Objekat (ID_Resursa, Naucni_Naziv, Tip_Objekta, Velicina, Lo
 (14, 'Kepler-452b',              'Egzoplaneta', 0.0001,'Sazvežđe Labuda',         1400.00),
 (15, 'Alpha Ursae Minoris',      'Zvezda',    37.50,  'Sazvežđe Malog Medveda',   323.00);
 
-INSERT INTO Alat (ID_Lab, ID_Tipa, Datum_Nabavke, Datum_Proizvodnje) VALUES
-(1, 1, '2005-03-15', '2004-06-10'),
-(1, 3, '2008-07-20', '2007-11-05'),
-(1, 4, '2010-02-14', '2009-08-22'),
-(2, 1, '2003-09-10', '2002-12-15'),
-(2, 4, '2012-05-18', '2011-10-30'),
-(2, 3, '2015-11-25', '2015-03-14'),
-(3, 2, '2007-04-22', '2006-09-17'),
-(3, 6, '2011-08-30', '2010-12-05'),
-(3, 2, '2018-01-15', '2017-06-20'),
-(4, 1, '2000-06-05', '1999-11-12'),
-(4, 3, '2006-10-18', '2005-04-25'),
-(4, 4, '2014-03-27', '2013-09-08'),
-(5, 2, '2001-12-10', '2001-05-30'),
-(5, 6, '2009-07-14', '2008-11-22'),
-(6, 5, '2010-05-20', '2009-10-15'),
-(6, 5, '2013-09-08', '2012-03-25'),
-(6, 6, '2016-02-14', '2015-07-10'),
-(7, 1, '1998-11-22', '1997-05-18'),
-(7, 3, '2004-04-16', '2003-10-07'),
-(7, 4, '2011-07-29', '2010-12-15'),
-(8, 5, '2012-03-11', '2011-08-20'),
-(8, 6, '2015-06-25', '2014-11-30'),
-(9, 2, '2002-08-14', '2001-02-28'),
-(9, 6, '2010-12-03', '2010-05-15'),
-(10, 1, '2019-04-08', '2018-10-22'),
-(10, 4, '2021-02-17', '2020-07-14'),
-(10, 3, '2022-09-30', '2022-03-05'),
-(1, 4, '2023-01-10', '2022-06-15'),
-(3, 6, '2023-05-22', '2022-11-08'),
-(7, 1, '2023-11-14', '2023-04-20');
+INSERT INTO Alat (ID_Lab, ID_Tipa, Naziv, Datum_Nabavke, Datum_Proizvodnje) VALUES
+(1,  1, 'Refraktor Zeiss 150mm',        '2005-03-15', '2004-06-10'),
+(1,  3, 'Echelle Spektrometar ESO',      '2008-07-20', '2007-11-05'),
+(1,  4, 'Apogee CCD Alta U47',           '2010-02-14', '2009-08-22'),
+(2,  1, 'Schmidt-Cassegrain 250mm',      '2003-09-10', '2002-12-15'),
+(2,  4, 'FLI CCD ML16200',              '2012-05-18', '2011-10-30'),
+(2,  3, 'Lhires III Spektrometar',       '2015-11-25', '2015-03-14'),
+(3,  2, 'Parabolična Antena 25m',        '2007-04-22', '2006-09-17'),
+(3,  6, 'FPGA Signal Procesor V2',       '2011-08-30', '2010-12-05'),
+(3,  2, 'Parabolična Antena 15m',        '2018-01-15', '2017-06-20'),
+(4,  1, 'Ritchey-Chretien 400mm',        '2000-06-05', '1999-11-12'),
+(4,  3, 'HARPS Spektrometar',            '2006-10-18', '2005-04-25'),
+(4,  4, 'e2v CCD231-84',                '2014-03-27', '2013-09-08'),
+(5,  2, 'Gregorijanska Antena 305m',     '2001-12-10', '2001-05-30'),
+(5,  6, 'GPU Signal Procesor A100',      '2009-07-14', '2008-11-22'),
+(6,  5, 'IceCube DOM Detektor #1',       '2010-05-20', '2009-10-15'),
+(6,  5, 'IceCube DOM Detektor #2',       '2013-09-08', '2012-03-25'),
+(6,  6, 'FPGA Signal Procesor V3',       '2016-02-14', '2015-07-10'),
+(7,  1, 'Keck I Teleskop 10m',           '1998-11-22', '1997-05-18'),
+(7,  3, 'HIRES Spektrometar Keck',       '2004-04-16', '2003-10-07'),
+(7,  4, 'LRIS CCD Kamera',              '2011-07-29', '2010-12-15'),
+(8,  5, 'Auger Površinski Detektor #1',  '2012-03-11', '2011-08-20'),
+(8,  6, 'Auger Signal Procesor',         '2015-06-25', '2014-11-30'),
+(9,  2, 'Effelsberg Antena 100m',        '2002-08-14', '2001-02-28'),
+(9,  6, 'PSRIX Signal Procesor',         '2010-12-03', '2010-05-15'),
+(10, 1, 'Cassegrain 300mm',              '2019-04-08', '2018-10-22'),
+(10, 4, 'Andor iKon-L CCD',             '2021-02-17', '2020-07-14'),
+(10, 3, 'DADOS Spektrometar',            '2022-09-30', '2022-03-05'),
+(1,  4, 'Moravian G4 CCD',              '2023-01-10', '2022-06-15'),
+(3,  6, 'ROACH2 Signal Procesor',        '2023-05-22', '2022-11-08'),
+(7,  1, 'Newton 200mm Teleskop',         '2023-11-14', '2023-04-20');
 
 INSERT INTO Eksperiment (ID_Teorije, Naziv, Tip) VALUES
 (1,  'Merenje Crvenog Pomaka Andromedine Galaksije',           'Opticka_Teleskopska_Opservacija'),
@@ -1114,35 +1154,94 @@ INSERT INTO Opservacija (ID_Sesije, ID_Nebeskog_Objekta, Broj_Ekspozicija, Izmer
 (99,  8,  14,  8.611, 31.5, 'dobar',         'M87 varijabilnost'),
 (100, 6,  20, 11.093, 21.5, 'dobar',         'Kepler sistem analiza');
 
-ALTER TABLE Alat ADD COLUMN Naziv VARCHAR(100) AFTER ID_Alata;
+INSERT INTO t_o_Objektu (ID_Teorije, ID_Nebeskog_Objekta, Opis_Veze) VALUES
+(1,  2,  'Lambda-CDM model predviđa širenje koje se meri crvenim pomakom M31'),
+(1,  8,  'Tamna energija utiče na kinematiku galaksije M87'),
+(3,  2,  'Tamna materija dominira u halo regionu Andromedine galaksije'),
+(3,  8,  'M87 pokazuje gravitacione efekte tamne materije'),
+(5,  5,  'Sagittarius A* je potvrda Opšte teorije relativnosti'),
+(5,  8,  'Crna rupa M87 korišćena za testiranje OTR'),
+(7,  5,  'Teorija crnih rupa direktno se odnosi na Sgr A*'),
+(7,  8,  'M87* je prvi direktno fotografisani objekat ove teorije'),
+(8,  4,  'PSR B1919+21 je prototipski objekat teorije pulsara'),
+(8,  10, 'PSR B0531+21 u Krajevskoj maglini je kljucni pulsar'),
+(11, 9,  'NGC 6992 je ostatak supernove — direktna primena teorije'),
+(11, 11, 'Betelgeuse kao kandidat za supernovae'),
+(13, 3,  'M42 je aktivna zvezdana maglina — primer teorije formiranja'),
+(13, 13, 'M20 Trifid maglina kao primer zvezdanog formiranja'),
+(18, 11, 'Teorija zvezdane evolucije — Betelgeuse u kasnoj fazi'),
+(18, 1,  'Alfa Centauri kao primer zvezdane evolucije glavnog niza'),
+(9,  6,  'Teorija egzoplaneta — Proxima b kao habitabilna zona'),
+(9,  14, 'Kepler-452b kao super-Zemlja u habitabilnoj zoni'),
+(10, 2,  'Galaktička dinamika Andromedine galaksije'),
+(10, 12, 'M51 kao primer interagujuce galakticke dinamike');
 
-UPDATE Alat SET Naziv = 'Refraktor Zeiss 150mm'         WHERE ID_Alata = 1;
-UPDATE Alat SET Naziv = 'Echelle Spektrometar ESO'       WHERE ID_Alata = 2;
-UPDATE Alat SET Naziv = 'Apogee CCD Alta U47'            WHERE ID_Alata = 3;
-UPDATE Alat SET Naziv = 'Schmidt-Cassegrain 250mm'       WHERE ID_Alata = 4;
-UPDATE Alat SET Naziv = 'FLI CCD ML16200'                WHERE ID_Alata = 5;
-UPDATE Alat SET Naziv = 'Lhires III Spektrometar'        WHERE ID_Alata = 6;
-UPDATE Alat SET Naziv = 'Parabolična Antena 25m'         WHERE ID_Alata = 7;
-UPDATE Alat SET Naziv = 'FPGA Signal Procesor V2'        WHERE ID_Alata = 8;
-UPDATE Alat SET Naziv = 'Parabolična Antena 15m'         WHERE ID_Alata = 9;
-UPDATE Alat SET Naziv = 'Ritchey-Chretien 400mm'         WHERE ID_Alata = 10;
-UPDATE Alat SET Naziv = 'HARPS Spektrometar'             WHERE ID_Alata = 11;
-UPDATE Alat SET Naziv = 'e2v CCD231-84'                  WHERE ID_Alata = 12;
-UPDATE Alat SET Naziv = 'Gregorijanska Antena 305m'      WHERE ID_Alata = 13;
-UPDATE Alat SET Naziv = 'GPU Signal Procesor A100'       WHERE ID_Alata = 14;
-UPDATE Alat SET Naziv = 'IceCube DOM Detektor #1'        WHERE ID_Alata = 15;
-UPDATE Alat SET Naziv = 'IceCube DOM Detektor #2'        WHERE ID_Alata = 16;
-UPDATE Alat SET Naziv = 'FPGA Signal Procesor V3'        WHERE ID_Alata = 17;
-UPDATE Alat SET Naziv = 'Keck I Teleskop 10m'            WHERE ID_Alata = 18;
-UPDATE Alat SET Naziv = 'HIRES Spektrometar Keck'        WHERE ID_Alata = 19;
-UPDATE Alat SET Naziv = 'LRIS CCD Kamera'                WHERE ID_Alata = 20;
-UPDATE Alat SET Naziv = 'Auger Površinski Detektor #1'   WHERE ID_Alata = 21;
-UPDATE Alat SET Naziv = 'Auger Signal Procesor'          WHERE ID_Alata = 22;
-UPDATE Alat SET Naziv = 'Effelsberg Antena 100m'         WHERE ID_Alata = 23;
-UPDATE Alat SET Naziv = 'PSRIX Signal Procesor'          WHERE ID_Alata = 24;
-UPDATE Alat SET Naziv = 'Cassegrain 300mm'               WHERE ID_Alata = 25;
-UPDATE Alat SET Naziv = 'Andor iKon-L CCD'               WHERE ID_Alata = 26;
-UPDATE Alat SET Naziv = 'DADOS Spektrometar'             WHERE ID_Alata = 27;
-UPDATE Alat SET Naziv = 'Moravian G4 CCD'                WHERE ID_Alata = 28;
-UPDATE Alat SET Naziv = 'ROACH2 Signal Procesor'         WHERE ID_Alata = 29;
-UPDATE Alat SET Naziv = 'Newton 200mm Teleskop'          WHERE ID_Alata = 30;
+INSERT INTO U_Labu (ID_Resursa, ID_Lab, Kolicina, Jedinica, Napomena) VALUES
+(1,  1, 1,     'objekat', 'Primarni objekat posmatranja'),
+(2,  1, 1,     'objekat', 'Dostupno za posmatranje'),
+(3,  1, 1,     'objekat', 'Sezonski dostupno'),
+(4,  3, 1,     'objekat', 'Radio posmatranje pulsara'),
+(5,  9, 1,     'objekat', 'VLBI posmatranje crne rupe'),
+(6,  4, 1,     'objekat', 'Spektroskopija egzoplanete'),
+(7,  1, 1,     'objekat', 'Redovno posmatranje'),
+(8,  9, 1,     'objekat', 'Radio posmatranje dzeta'),
+(9,  7, 1,     'objekat', 'Fotometrija ostataka'),
+(10, 3, 1,     'objekat', 'Tajming analiza pulsara'),
+(11, 1, 1,     'objekat', 'Dugorocno pracenje'),
+(12, 7, 1,     'objekat', 'Posmatranje interakcije'),
+(13, 4, 1,     'objekat', 'IR fotometrija'),
+(14, 2, 1,     'objekat', 'Tranzit merenja'),
+(15, 1, 1,     'objekat', 'Astrometrija'),
+(16, 1, 50,    'kom',     'Kalibracioni dataset'),
+(17, 3, 30,    'kom',     'Radio kalibracioni signali'),
+(18, 4, 25,    'kom',     'Flat field kalibracija'),
+(23, 1, 1,     'sistem',  'Solarni paneli aktivni'),
+(24, 6, 1,     'agregat', 'Rezervno napajanje'),
+(25, 7, 1,     'UPS',     'Neprekidno napajanje'),
+(26, 1, 500,   'L',       'Rashladni medijum za CCD'),
+(27, 6, 200,   'kg',      'Scintilacioni materijal'),
+(28, 6, 500,   'kom',     'PMT detektori'),
+(29, 6, 10000, 'L',       'Cerenkov voda'),
+(30, 3, 200,   'L',       'Argon za detektor');
+
+INSERT INTO Koriscen_U_Eks (ID_Eksperimenta, ID_Alata) VALUES
+(1,  1),  (1,  3),
+(2,  7),  (2,  8),
+(3,  18), (3,  20),
+(4,  15), (4,  16),
+(5,  18), (5,  19),
+(6,  1),  (6,  2),
+(7,  23), (7,  14),
+(8,  13), (8,  14),
+(9,  10), (9,  11),
+(10, 18), (10, 20),
+(11, 4),  (11, 5),
+(12, 7),  (12, 8),
+(13, 1),  (13, 3),
+(14, 4),  (14, 5),
+(15, 10), (15, 11),
+(16, 23), (16, 24),
+(17, 15), (17, 17),
+(18, 1),  (18, 3),
+(19, 21), (19, 22),
+(20, 18), (20, 19),
+(21, 4),  (21, 3),
+(22, 7),  (22, 8),
+(23, 21), (23, 22),
+(24, 13), (24, 14),
+(25, 1),  (25, 3),
+(26, 23), (26, 24),
+(27, 23), (27, 14),
+(28, 4),  (28, 5),
+(29, 4),  (29, 5),
+(30, 15), (30, 17);
+
+INSERT INTO Op_O_Objektu (ID_Opservacije, ID_Nebeskog_Objekta) VALUES
+(1,  1),  (2,  1),  (3,  5),  (4,  3),
+(5,  13), (6,  5),  (7,  7),  (8,  8),
+(9,  4),  (10, 6),  (11, 2),  (12, 3),
+(13, 10), (14, 14), (15, 7),  (16, 8),
+(17, 5),  (18, 11), (19, 14), (20, 2),
+(21, 12), (22, 2),  (23, 3),  (24, 14),
+(25, 4),  (26, 13), (27, 5),  (28, 5),
+(29, 9),  (30, 6);
