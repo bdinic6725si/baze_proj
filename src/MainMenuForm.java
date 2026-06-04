@@ -417,7 +417,6 @@ class ObrisiLaboratorijuForm extends JFrame {
         int brojIstrazivaca = (int) model.getValueAt(row, 4);
         String naziv = model.getValueAt(row, 1).toString();
 
-        // Provera — ne sme biti istrazivaca
         if (brojIstrazivaca > 0) {
             JOptionPane.showMessageDialog(this,
                     "Laboratorija '" + naziv + "' se ne može obrisati!\n" +
@@ -428,7 +427,6 @@ class ObrisiLaboratorijuForm extends JFrame {
             return;
         }
 
-        // Potvrda brisanja
         int confirm = JOptionPane.showConfirmDialog(this,
                 "Da li ste sigurni da želite da obrišete laboratoriju:\n'" + naziv + "'?",
                 "Potvrda brisanja",
@@ -439,15 +437,100 @@ class ObrisiLaboratorijuForm extends JFrame {
         if (confirm != JOptionPane.YES_OPTION) return;
 
         int id = (int) model.getValueAt(row, 0);
+        Connection conn = DatabaseConnection.getConnection();
 
-        String sql = "DELETE FROM Laboratorija WHERE ID_Lab = ?";
-        try (PreparedStatement ps = DatabaseConnection.getConnection().prepareStatement(sql)) {
-            ps.setInt(1, id);
-            ps.executeUpdate();
-            JOptionPane.showMessageDialog(this, "Laboratorija '" + naziv + "' uspešno obrisana!", "Uspeh", JOptionPane.INFORMATION_MESSAGE);
+        try {
+            conn.setAutoCommit(false);
+
+            // Korak 1 — obrisi Vremenski_Uslovi vezane za sesije te laboratorije
+            PreparedStatement ps1 = conn.prepareStatement("""
+            DELETE vu FROM Vremenski_Uslovi vu
+            JOIN Sesija s ON s.ID_Sesije = vu.ID_Sesije
+            WHERE s.ID_Lab = ?
+        """);
+            ps1.setInt(1, id);
+            ps1.executeUpdate();
+
+            // Korak 2 — obrisi Opservacije vezane za sesije te laboratorije
+            PreparedStatement ps2 = conn.prepareStatement("""
+            DELETE o FROM Opservacija o
+            JOIN Sesija s ON s.ID_Sesije = o.ID_Sesije
+            WHERE s.ID_Lab = ?
+        """);
+            ps2.setInt(1, id);
+            ps2.executeUpdate();
+
+            // Korak 3 — obrisi Op_O_Objektu vezane za te opservacije
+            PreparedStatement ps3 = conn.prepareStatement("""
+            DELETE ooo FROM Op_O_Objektu ooo
+            JOIN Sesija s ON s.ID_Sesije = (
+                SELECT ID_Sesije FROM Opservacija
+                WHERE ID_Opservacije = ooo.ID_Opservacije
+            )
+            WHERE s.ID_Lab = ?
+        """);
+            ps3.setInt(1, id);
+            ps3.executeUpdate();
+
+            // Korak 4 — obrisi Sesije
+            PreparedStatement ps4 = conn.prepareStatement(
+                    "DELETE FROM Sesija WHERE ID_Lab = ?"
+            );
+            ps4.setInt(1, id);
+            ps4.executeUpdate();
+
+            // Korak 5 — obrisi Izvodjac_Eksperimenta vezane za izvodjenja te laboratorije
+            PreparedStatement ps5 = conn.prepareStatement("""
+            DELETE ie FROM Izvodjac_Eksperimenta ie
+            JOIN Izvodjenje iz ON iz.ID_Izvodjenja = ie.ID_Izvodjenja
+            WHERE iz.ID_Lab = ?
+        """);
+            ps5.setInt(1, id);
+            ps5.executeUpdate();
+
+            // Korak 6 — obrisi Izvodjenja
+            PreparedStatement ps6 = conn.prepareStatement(
+                    "DELETE FROM Izvodjenje WHERE ID_Lab = ?"
+            );
+            ps6.setInt(1, id);
+            ps6.executeUpdate();
+
+            // Korak 7 — obrisi Alate
+            PreparedStatement ps7 = conn.prepareStatement(
+                    "DELETE FROM Alat WHERE ID_Lab = ?"
+            );
+            ps7.setInt(1, id);
+            ps7.executeUpdate();
+
+            // Korak 8 — obrisi U_Labu
+            PreparedStatement ps8 = conn.prepareStatement(
+                    "DELETE FROM U_Labu WHERE ID_Lab = ?"
+            );
+            ps8.setInt(1, id);
+            ps8.executeUpdate();
+
+            // Korak 9 — obrisi samu laboratoriju
+            PreparedStatement ps9 = conn.prepareStatement(
+                    "DELETE FROM Laboratorija WHERE ID_Lab = ?"
+            );
+            ps9.setInt(1, id);
+            ps9.executeUpdate();
+
+            conn.commit();
+            JOptionPane.showMessageDialog(this,
+                    "Laboratorija '" + naziv + "' uspešno obrisana!",
+                    "Uspeh", JOptionPane.INFORMATION_MESSAGE
+            );
             loadData();
+
         } catch (SQLException e) {
-            JOptionPane.showMessageDialog(this, "Greška pri brisanju: " + e.getMessage(), "Greška", JOptionPane.ERROR_MESSAGE);
+            try { conn.rollback(); } catch (SQLException ex) { ex.printStackTrace(); }
+            JOptionPane.showMessageDialog(this,
+                    "Greška pri brisanju: " + e.getMessage(),
+                    "Greška", JOptionPane.ERROR_MESSAGE
+            );
+        } finally {
+            try { conn.setAutoCommit(true); } catch (SQLException e) { e.printStackTrace(); }
         }
     }
 }
