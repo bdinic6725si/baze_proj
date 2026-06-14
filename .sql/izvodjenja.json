@@ -1,0 +1,2629 @@
+[
+  {
+    "izvodjenje_id": 1,
+    "datum": "2024-01-10",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Beogradska Astronomska Opservatorija",
+      "lokacija_opis": "Opservatorija na Zvezdari, osnivana 1891. godine",
+      "geografske_koordinate": "44.8036° N, 20.5151° E",
+      "nadmorska_visina_m": 254.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Merenje Crvenog Pomaka Andromedine Galaksije",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Lambda-CDM Model",
+        "opis": "Standardni kosmološki model koji opisuje svemir sa tamnom energijom i hladnom tamnom materijom"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 1,
+        "broj_ekspozicija": 30,
+        "izmerena_magnituda": -0.27,
+        "snr": 45.3,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Jasno posmatranje, dobri uslovi",
+        "nebeski_objekat": {
+          "naucni_naziv": "Alpha Centauri System",
+          "tip": "Zvezda",
+          "velicina": 1.1,
+          "lokacija_u_svemiru": "Sazvežđe Kentaura",
+          "udaljenost_od_zemlje_sg": 4.37
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 2,
+    "datum": "2024-02-15",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "ESO La Silla",
+      "lokacija_opis": "Evropska južna opservatorija u Čileu na visini od 2400m",
+      "geografske_koordinate": "29.2563° S, 70.7300° W",
+      "nadmorska_visina_m": 2400.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Merenje Crvenog Pomaka Andromedine Galaksije",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Lambda-CDM Model",
+        "opis": "Standardni kosmološki model koji opisuje svemir sa tamnom energijom i hladnom tamnom materijom"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 2,
+        "broj_ekspozicija": 25,
+        "izmerena_magnituda": -0.268,
+        "snr": 42.1,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Potvrda prvog posmatranja",
+        "nebeski_objekat": {
+          "naucni_naziv": "Alpha Centauri System",
+          "tip": "Zvezda",
+          "velicina": 1.1,
+          "lokacija_u_svemiru": "Sazvežđe Kentaura",
+          "udaljenost_od_zemlje_sg": 4.37
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 3,
+    "datum": "2024-01-20",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Radio Opservatorija Irig",
+      "lokacija_opis": "Radio opservatorija na Fruškoj gori, specijalizovana za radio astronomiju",
+      "geografske_koordinate": "45.1022° N, 19.8511° E",
+      "nadmorska_visina_m": 312.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Posmatranje Inflacionih Efekata u CMB",
+      "tip": "Radio_Astronomski_Eksperiment",
+      "naucna_teorija": {
+        "naziv": "Inflatorna Kosmologija",
+        "opis": "Teorija koja opisuje eksponencijalno širenje svemira u ranoj fazi nakon Velikog praska"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 3,
+        "broj_ekspozicija": 15,
+        "izmerena_magnituda": 5.12,
+        "snr": 28.7,
+        "kvalitet_podataka": "dobar",
+        "napomena": "Parcijalna oblacnost, prihvatljivi podaci",
+        "nebeski_objekat": {
+          "naucni_naziv": "Sgr A*",
+          "tip": "Crna_Rupa",
+          "velicina": 0.001,
+          "lokacija_u_svemiru": "Centar Mlečnog Puta",
+          "udaljenost_od_zemlje_sg": 26000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 4,
+    "datum": "2024-02-05",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Mauna Kea Opservatorija",
+      "lokacija_opis": "Kompleks opservatorija na vrhu vulkana na Havajima",
+      "geografske_koordinate": "19.8228° N, 155.4695° W",
+      "nadmorska_visina_m": 4205.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Mapiranje Tamne Materije u Grozdovima Galaksija",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Teorija Tamne Materije",
+        "opis": "Model koji objašnjava gravitacione efekte nevidljive materije u galaksijama"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 4,
+        "broj_ekspozicija": 20,
+        "izmerena_magnituda": 4.0,
+        "snr": 38.5,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Odlicno posmatranje M42",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 42",
+          "tip": "Maglina",
+          "velicina": 24.0,
+          "lokacija_u_svemiru": "Sazvežđe Orijona",
+          "udaljenost_od_zemlje_sg": 1344.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 5,
+    "datum": "2024-01-25",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "IceCube Istraživačka Stanica",
+      "lokacija_opis": "Podzemni detektor neutrina na Južnom polu dubine do 2450m",
+      "geografske_koordinate": "90.0000° S, 0.0000° E",
+      "nadmorska_visina_m": -1500.0,
+      "tip": "Podzemna_Istrazivacka_Stanica"
+    },
+    "eksperiment": {
+      "naziv": "Detekcija Neutrina iz Supernova",
+      "tip": "Detekcija_Kozmickog_Zraca",
+      "naucna_teorija": {
+        "naziv": "Standardni Model Čestica",
+        "opis": "Teorija koja opisuje fundamentalne čestice i sile osim gravitacije"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 5,
+        "broj_ekspozicija": 10,
+        "izmerena_magnituda": 8.5,
+        "snr": 22.3,
+        "kvalitet_podataka": "dobar",
+        "napomena": "UHE detekcija, slabiji signal",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 20",
+          "tip": "Maglina",
+          "velicina": 28.0,
+          "lokacija_u_svemiru": "Sazvežđe Strelca",
+          "udaljenost_od_zemlje_sg": 5200.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 6,
+    "datum": "2024-03-10",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Mauna Kea Opservatorija",
+      "lokacija_opis": "Kompleks opservatorija na vrhu vulkana na Havajima",
+      "geografske_koordinate": "19.8228° N, 155.4695° W",
+      "nadmorska_visina_m": 4205.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Posmatranje Sagittarius A* u Infracrvenom",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Opšta Teorija Relativnosti",
+        "opis": "Ajnštajnova teorija gravitacije kao zakrivljenosti prostor-vremena"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 6,
+        "broj_ekspozicija": 12,
+        "izmerena_magnituda": 4.1,
+        "snr": 35.8,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Infracrveno posmatranje Sgr A*",
+        "nebeski_objekat": {
+          "naucni_naziv": "Sgr A*",
+          "tip": "Crna_Rupa",
+          "velicina": 0.001,
+          "lokacija_u_svemiru": "Centar Mlečnog Puta",
+          "udaljenost_od_zemlje_sg": 26000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 7,
+    "datum": "2024-03-20",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Beogradska Astronomska Opservatorija",
+      "lokacija_opis": "Opservatorija na Zvezdari, osnivana 1891. godine",
+      "geografske_koordinate": "44.8036° N, 20.5151° E",
+      "nadmorska_visina_m": 254.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Spektralna Analiza Alfa Centauri Sistema",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Nukleosinteza Velikog Praska",
+        "opis": "Teorija o formiranju lakih elemenata u prvih nekoliko minuta svemira"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 7,
+        "broj_ekspozicija": 18,
+        "izmerena_magnituda": -1.46,
+        "snr": 48.2,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Spektralna analiza Sirijusa",
+        "nebeski_objekat": {
+          "naucni_naziv": "Sirius A",
+          "tip": "Zvezda",
+          "velicina": 1.711,
+          "lokacija_u_svemiru": "Sazvežđe Velikog Psa",
+          "udaljenost_od_zemlje_sg": 8.6
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 8,
+    "datum": "2024-02-28",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Effelsberg Radio Teleskop",
+      "lokacija_opis": "Veliki radio teleskop prečnika 100m u Nemačkoj",
+      "geografske_koordinate": "50.5247° N, 6.8828° E",
+      "nadmorska_visina_m": 369.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Merenje Mase Crne Rupe M87",
+      "tip": "Radio_Astronomski_Eksperiment",
+      "naucna_teorija": {
+        "naziv": "Teorija Crnih Rupa",
+        "opis": "Opis nastanka i osobina singulariteta u prostor-vremenu"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 8,
+        "broj_ekspozicija": 22,
+        "izmerena_magnituda": 8.6,
+        "snr": 32.4,
+        "kvalitet_podataka": "dobar",
+        "napomena": "Radio posmatranje M87",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 87",
+          "tip": "Galaksija",
+          "velicina": 120000.0,
+          "lokacija_u_svemiru": "Sazvežđe Device",
+          "udaljenost_od_zemlje_sg": 53490000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 12,
+    "datum": "2024-03-05",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Mauna Kea Opservatorija",
+      "lokacija_opis": "Kompleks opservatorija na vrhu vulkana na Havajima",
+      "geografske_koordinate": "19.8228° N, 155.4695° W",
+      "nadmorska_visina_m": 4205.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Posmatranje Ostataka Supernove NGC 6992",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Teorija Supernovae",
+        "opis": "Model eksplozivne smrti masivnih zvezda i njihovog uticaja na okolinu"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 12,
+        "broj_ekspozicija": 16,
+        "izmerena_magnituda": 4.0,
+        "snr": 36.9,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Fotometrija M42",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 42",
+          "tip": "Maglina",
+          "velicina": 24.0,
+          "lokacija_u_svemiru": "Sazvežđe Orijona",
+          "udaljenost_od_zemlje_sg": 1344.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 13,
+    "datum": "2024-03-15",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Radio Opservatorija Irig",
+      "lokacija_opis": "Radio opservatorija na Fruškoj gori, specijalizovana za radio astronomiju",
+      "geografske_koordinate": "45.1022° N, 19.8511° E",
+      "nadmorska_visina_m": 312.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Merenje CMB Anizotropije",
+      "tip": "Radio_Astronomski_Eksperiment",
+      "naucna_teorija": {
+        "naziv": "Kozmičko Mikrotalasno Pozadinsko Zračenje",
+        "opis": "Teorija o reliknom zračenju iz ranog svemira"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 13,
+        "broj_ekspozicija": 20,
+        "izmerena_magnituda": 9.8,
+        "snr": 25.4,
+        "kvalitet_podataka": "dobar",
+        "napomena": "Radio emisija maglina",
+        "nebeski_objekat": {
+          "naucni_naziv": "PSR B0531+21",
+          "tip": "Pulsar",
+          "velicina": 0.02,
+          "lokacija_u_svemiru": "Sazvežđe Bika",
+          "udaljenost_od_zemlje_sg": 6523.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 16,
+    "datum": "2024-01-30",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "ESO La Silla",
+      "lokacija_opis": "Evropska južna opservatorija u Čileu na visini od 2400m",
+      "geografske_koordinate": "29.2563° S, 70.7300° W",
+      "nadmorska_visina_m": 2400.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Nuklearna Abundancija u Spektru Sirjusa",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Zvezdana Nukleosinteza",
+        "opis": "Teorija o formiranju teških elemenata unutar zvezda"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 16,
+        "broj_ekspozicija": 18,
+        "izmerena_magnituda": 8.62,
+        "snr": 33.7,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Dzet mapiranje M87",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 87",
+          "tip": "Galaksija",
+          "velicina": 120000.0,
+          "lokacija_u_svemiru": "Sazvežđe Device",
+          "udaljenost_od_zemlje_sg": 53490000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 17,
+    "datum": "2024-02-20",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Effelsberg Radio Teleskop",
+      "lokacija_opis": "Veliki radio teleskop prečnika 100m u Nemačkoj",
+      "geografske_koordinate": "50.5247° N, 6.8828° E",
+      "nadmorska_visina_m": 369.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Posmatranje Džeta Galaksije M87",
+      "tip": "Radio_Astronomski_Eksperiment",
+      "naucna_teorija": {
+        "naziv": "Model Aktivnih Galaktičkih Jezgara",
+        "opis": "Teorija o supermasivnim crnim rupama u centrima galaksija"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 17,
+        "broj_ekspozicija": 6,
+        "izmerena_magnituda": 4.09,
+        "snr": 12.1,
+        "kvalitet_podataka": "neupotrebljiv",
+        "napomena": "GW detekcija, preveliki sum",
+        "nebeski_objekat": {
+          "naucni_naziv": "Sgr A*",
+          "tip": "Crna_Rupa",
+          "velicina": 0.001,
+          "lokacija_u_svemiru": "Centar Mlečnog Puta",
+          "udaljenost_od_zemlje_sg": 26000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 20,
+    "datum": "2024-02-10",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Pierre Auger Opservatorija",
+      "lokacija_opis": "Najveći detektor kozmičkih zraka u Argentini",
+      "geografske_koordinate": "35.2000° S, 69.3833° W",
+      "nadmorska_visina_m": 1400.0,
+      "tip": "Podzemna_Istrazivacka_Stanica"
+    },
+    "eksperiment": {
+      "naziv": "Energetski Spektar Kozmičkih Zraka",
+      "tip": "Detekcija_Kozmickog_Zraca",
+      "naucna_teorija": {
+        "naziv": "Teorija Kozmičkih Zraka",
+        "opis": "Model visokoenergetskih čestica koje putuju kroz svemir"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 20,
+        "broj_ekspozicija": 22,
+        "izmerena_magnituda": 3.442,
+        "snr": 44.1,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Merenje Hablove konstante",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 31",
+          "tip": "Galaksija",
+          "velicina": 220000.0,
+          "lokacija_u_svemiru": "Sazvežđe Andromede",
+          "udaljenost_od_zemlje_sg": 2537000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 22,
+    "datum": "2023-11-15",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Beogradska Astronomska Opservatorija",
+      "lokacija_opis": "Opservatorija na Zvezdari, osnivana 1891. godine",
+      "geografske_koordinate": "44.8036° N, 20.5151° E",
+      "nadmorska_visina_m": 254.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Posmatranje Galaksije Vrtlog M51",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Lambda-CDM Model",
+        "opis": "Standardni kosmološki model koji opisuje svemir sa tamnom energijom i hladnom tamnom materijom"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 22,
+        "broj_ekspozicija": 28,
+        "izmerena_magnituda": 3.441,
+        "snr": 43.8,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Potvrda crvenog pomaka M31",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 31",
+          "tip": "Galaksija",
+          "velicina": 220000.0,
+          "lokacija_u_svemiru": "Sazvežđe Andromede",
+          "udaljenost_od_zemlje_sg": 2537000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 23,
+    "datum": "2023-12-10",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Radio Opservatorija Irig",
+      "lokacija_opis": "Radio opservatorija na Fruškoj gori, specijalizovana za radio astronomiju",
+      "geografske_koordinate": "45.1022° N, 19.8511° E",
+      "nadmorska_visina_m": 312.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Radio Emisija Maglina Orijona",
+      "tip": "Radio_Astronomski_Eksperiment",
+      "naucna_teorija": {
+        "naziv": "Teorija Tamne Materije",
+        "opis": "Model koji objašnjava gravitacione efekte nevidljive materije u galaksijama"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 23,
+        "broj_ekspozicija": 18,
+        "izmerena_magnituda": 4.001,
+        "snr": 35.2,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Radio emisija maglina",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 42",
+          "tip": "Maglina",
+          "velicina": 24.0,
+          "lokacija_u_svemiru": "Sazvežđe Orijona",
+          "udaljenost_od_zemlje_sg": 1344.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 24,
+    "datum": "2024-01-05",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Pierre Auger Opservatorija",
+      "lokacija_opis": "Najveći detektor kozmičkih zraka u Argentini",
+      "geografske_koordinate": "35.2000° S, 69.3833° W",
+      "nadmorska_visina_m": 1400.0,
+      "tip": "Podzemna_Istrazivacka_Stanica"
+    },
+    "eksperiment": {
+      "naziv": "Aniza Kozmičkih Zraka Ultra Visokih Energija",
+      "tip": "Detekcija_Kozmickog_Zraca",
+      "naucna_teorija": {
+        "naziv": "Teorija Kozmičkih Zraka",
+        "opis": "Model visokoenergetskih čestica koje putuju kroz svemir"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 24,
+        "broj_ekspozicija": 8,
+        "izmerena_magnituda": 13.51,
+        "snr": 18.7,
+        "kvalitet_podataka": "dobar",
+        "napomena": "UHE kozmicki zraci",
+        "nebeski_objekat": {
+          "naucni_naziv": "Kepler-452b",
+          "tip": "Egzoplaneta",
+          "velicina": 0.0001,
+          "lokacija_u_svemiru": "Sazvežđe Labuda",
+          "udaljenost_od_zemlje_sg": 1400.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 25,
+    "datum": "2024-02-25",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Arecibo Nasledna Stanica",
+      "lokacija_opis": "Istraživačka stanica koja nastavlja rad nekadašnjeg Arecibo teleskopa u Portoriku",
+      "geografske_koordinate": "18.3464° N, 66.7528° W",
+      "nadmorska_visina_m": 497.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Polarizacija Radio Signala Pulsara",
+      "tip": "Radio_Astronomski_Eksperiment",
+      "naucna_teorija": {
+        "naziv": "Model Pulsara",
+        "opis": "Teorija o rotacionim neutronskim zvezdama koje emituju elektromagnetno zračenje"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 25,
+        "broj_ekspozicija": 12,
+        "izmerena_magnituda": 7.01,
+        "snr": 28.3,
+        "kvalitet_podataka": "dobar",
+        "napomena": "Polarizacija pulsara",
+        "nebeski_objekat": {
+          "naucni_naziv": "PSR B1919+21",
+          "tip": "Pulsar",
+          "velicina": 0.02,
+          "lokacija_u_svemiru": "Sazvežđe Lisice",
+          "udaljenost_od_zemlje_sg": 2283.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 28,
+    "datum": "2024-01-18",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Effelsberg Radio Teleskop",
+      "lokacija_opis": "Veliki radio teleskop prečnika 100m u Nemačkoj",
+      "geografske_koordinate": "50.5247° N, 6.8828° E",
+      "nadmorska_visina_m": 369.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Merenje Spina Crne Rupe",
+      "tip": "Radio_Astronomski_Eksperiment",
+      "naucna_teorija": {
+        "naziv": "Teorija Crnih Rupa",
+        "opis": "Opis nastanka i osobina singulariteta u prostor-vremenu"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 28,
+        "broj_ekspozicija": 16,
+        "izmerena_magnituda": 4.095,
+        "snr": 36.2,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Spin crne rupe",
+        "nebeski_objekat": {
+          "naucni_naziv": "Sgr A*",
+          "tip": "Crna_Rupa",
+          "velicina": 0.001,
+          "lokacija_u_svemiru": "Centar Mlečnog Puta",
+          "udaljenost_od_zemlje_sg": 26000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 29,
+    "datum": "2024-02-22",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "ESO La Silla",
+      "lokacija_opis": "Evropska južna opservatorija u Čileu na visini od 2400m",
+      "geografske_koordinate": "29.2563° S, 70.7300° W",
+      "nadmorska_visina_m": 2400.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Hemijski Sastav Supernova Ostataka",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Teorija Supernovae",
+        "opis": "Model eksplozivne smrti masivnih zvezda i njihovog uticaja na okolinu"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 29,
+        "broj_ekspozicija": 22,
+        "izmerena_magnituda": 5.1,
+        "snr": 40.3,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Ostaci supernove NGC 6992",
+        "nebeski_objekat": {
+          "naucni_naziv": "NGC 6992",
+          "tip": "Maglina",
+          "velicina": 110.0,
+          "lokacija_u_svemiru": "Sazvežđe Labuda",
+          "udaljenost_od_zemlje_sg": 1470.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 30,
+    "datum": "2024-03-12",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Višnjanska Opservatorija",
+      "lokacija_opis": "Opservatorija u blizini Višnjana u Istri, poznata po otkrivanju asteroida",
+      "geografske_koordinate": "45.2983° N, 13.7253° E",
+      "nadmorska_visina_m": 152.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Tranzit Egzoplaneta Kepler Sistema",
+      "tip": "Opticka_Teleskoleska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Teorija Egzoplaneta",
+        "opis": "Modeli formiranja i evolucije planeta oko drugih zvezda"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 30,
+        "broj_ekspozicija": 30,
+        "izmerena_magnituda": 11.09,
+        "snr": 22.8,
+        "kvalitet_podataka": "dobar",
+        "napomena": "Tranzit Kepler-452b",
+        "nebeski_objekat": {
+          "naucni_naziv": "Proxima Centauri b",
+          "tip": "Egzoplaneta",
+          "velicina": 0.0001,
+          "lokacija_u_svemiru": "Sazvežđe Kentaura",
+          "udaljenost_od_zemlje_sg": 4.24
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 32,
+    "datum": "2023-10-05",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Mauna Kea Opservatorija",
+      "lokacija_opis": "Kompleks opservatorija na vrhu vulkana na Havajima",
+      "geografske_koordinate": "19.8228° N, 155.4695° W",
+      "nadmorska_visina_m": 4205.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Merenje Crvenog Pomaka Andromedine Galaksije",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Lambda-CDM Model",
+        "opis": "Standardni kosmološki model koji opisuje svemir sa tamnom energijom i hladnom tamnom materijom"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 32,
+        "broj_ekspozicija": 24,
+        "izmerena_magnituda": 3.44,
+        "snr": 42.5,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Multi-glasnik posmatranje",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 31",
+          "tip": "Galaksija",
+          "velicina": 220000.0,
+          "lokacija_u_svemiru": "Sazvežđe Andromede",
+          "udaljenost_od_zemlje_sg": 2537000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 33,
+    "datum": "2023-11-20",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "ESO La Silla",
+      "lokacija_opis": "Evropska južna opservatorija u Čileu na visini od 2400m",
+      "geografske_koordinate": "29.2563° S, 70.7300° W",
+      "nadmorska_visina_m": 2400.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Posmatranje Sagittarius A* u Infracrvenom",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Opšta Teorija Relativnosti",
+        "opis": "Ajnštajnova teorija gravitacije kao zakrivljenosti prostor-vremena"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 33,
+        "broj_ekspozicija": 20,
+        "izmerena_magnituda": 3.439,
+        "snr": 41.0,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Crveni pomak potvrdjen",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 31",
+          "tip": "Galaksija",
+          "velicina": 220000.0,
+          "lokacija_u_svemiru": "Sazvežđe Andromede",
+          "udaljenost_od_zemlje_sg": 2537000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 34,
+    "datum": "2023-12-15",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Effelsberg Radio Teleskop",
+      "lokacija_opis": "Veliki radio teleskop prečnika 100m u Nemačkoj",
+      "geografske_koordinate": "50.5247° N, 6.8828° E",
+      "nadmorska_visina_m": 369.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Merenje Mase Crne Rupe M87",
+      "tip": "Radio_Astronomski_Eksperiment",
+      "naucna_teorija": {
+        "naziv": "Teorija Crnih Rupa",
+        "opis": "Opis nastanka i osobina singulariteta u prostor-vremenu"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 34,
+        "broj_ekspozicija": 12,
+        "izmerena_magnituda": 4.1,
+        "snr": 33.8,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Infracrvena posmatranja",
+        "nebeski_objekat": {
+          "naucni_naziv": "Sgr A*",
+          "tip": "Crna_Rupa",
+          "velicina": 0.001,
+          "lokacija_u_svemiru": "Centar Mlečnog Puta",
+          "udaljenost_od_zemlje_sg": 26000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 35,
+    "datum": "2024-01-08",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Radio Opservatorija Irig",
+      "lokacija_opis": "Radio opservatorija na Fruškoj gori, specijalizovana za radio astronomiju",
+      "geografske_koordinate": "45.1022° N, 19.8511° E",
+      "nadmorska_visina_m": 312.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Merenje CMB Anizotropije",
+      "tip": "Radio_Astronomski_Eksperiment",
+      "naucna_teorija": {
+        "naziv": "Kozmičko Mikrotalasno Pozadinsko Zračenje",
+        "opis": "Teorija o reliknom zračenju iz ranog svemira"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 35,
+        "broj_ekspozicija": 16,
+        "izmerena_magnituda": 8.615,
+        "snr": 31.2,
+        "kvalitet_podataka": "dobar",
+        "napomena": "VLBI M87",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 87",
+          "tip": "Galaksija",
+          "velicina": 120000.0,
+          "lokacija_u_svemiru": "Sazvežđe Device",
+          "udaljenost_od_zemlje_sg": 53490000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 36,
+    "datum": "2024-02-18",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Pierre Auger Opservatorija",
+      "lokacija_opis": "Najveći detektor kozmičkih zraka u Argentini",
+      "geografske_koordinate": "35.2000° S, 69.3833° W",
+      "nadmorska_visina_m": 1400.0,
+      "tip": "Podzemna_Istrazivacka_Stanica"
+    },
+    "eksperiment": {
+      "naziv": "Energetski Spektar Kozmičkih Zraka",
+      "tip": "Detekcija_Kozmickog_Zraca",
+      "naucna_teorija": {
+        "naziv": "Teorija Kozmičkih Zraka",
+        "opis": "Model visokoenergetskih čestica koje putuju kroz svemir"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 36,
+        "broj_ekspozicija": 10,
+        "izmerena_magnituda": 13.505,
+        "snr": 21.3,
+        "kvalitet_podataka": "dobar",
+        "napomena": "CMB merenja",
+        "nebeski_objekat": {
+          "naucni_naziv": "Kepler-452b",
+          "tip": "Egzoplaneta",
+          "velicina": 0.0001,
+          "lokacija_u_svemiru": "Sazvežđe Labuda",
+          "udaljenost_od_zemlje_sg": 1400.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 37,
+    "datum": "2023-09-25",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "IceCube Istraživačka Stanica",
+      "lokacija_opis": "Podzemni detektor neutrina na Južnom polu dubine do 2450m",
+      "geografske_koordinate": "90.0000° S, 0.0000° E",
+      "nadmorska_visina_m": -1500.0,
+      "tip": "Podzemna_Istrazivacka_Stanica"
+    },
+    "eksperiment": {
+      "naziv": "Detekcija Neutrina iz Supernova",
+      "tip": "Detekcija_Kozmickog_Zraca",
+      "naucna_teorija": {
+        "naziv": "Standardni Model Čestica",
+        "opis": "Teorija koja opisuje fundamentalne čestice i sile osim gravitacije"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 37,
+        "broj_ekspozicija": 14,
+        "izmerena_magnituda": 4.098,
+        "snr": 35.5,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Detekcija neutrina",
+        "nebeski_objekat": {
+          "naucni_naziv": "Sgr A*",
+          "tip": "Crna_Rupa",
+          "velicina": 0.001,
+          "lokacija_u_svemiru": "Centar Mlečnog Puta",
+          "udaljenost_od_zemlje_sg": 26000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 39,
+    "datum": "2023-11-10",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Arecibo Nasledna Stanica",
+      "lokacija_opis": "Istraživačka stanica koja nastavlja rad nekadašnjeg Arecibo teleskopa u Portoriku",
+      "geografske_koordinate": "18.3464° N, 66.7528° W",
+      "nadmorska_visina_m": 497.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Tajming Analize Pulsara PSR B1919",
+      "tip": "Radio_Astronomski_Eksperiment",
+      "naucna_teorija": {
+        "naziv": "Model Pulsara",
+        "opis": "Teorija o rotacionim neutronskim zvezdama koje emituju elektromagnetno zračenje"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 39,
+        "broj_ekspozicija": 22,
+        "izmerena_magnituda": 4.002,
+        "snr": 37.8,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Mapiranje tamne materije",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 42",
+          "tip": "Maglina",
+          "velicina": 24.0,
+          "lokacija_u_svemiru": "Sazvežđe Orijona",
+          "udaljenost_od_zemlje_sg": 1344.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 40,
+    "datum": "2023-12-20",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Mauna Kea Opservatorija",
+      "lokacija_opis": "Kompleks opservatorija na vrhu vulkana na Havajima",
+      "geografske_koordinate": "19.8228° N, 155.4695° W",
+      "nadmorska_visina_m": 4205.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Mapiranje Tamne Materije u Grozdovima Galaksija",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Teorija Tamne Materije",
+        "opis": "Model koji objašnjava gravitacione efekte nevidljive materije u galaksijama"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 40,
+        "broj_ekspozicija": 26,
+        "izmerena_magnituda": -1.461,
+        "snr": 47.5,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Spektralna analiza",
+        "nebeski_objekat": {
+          "naucni_naziv": "Sirius A",
+          "tip": "Zvezda",
+          "velicina": 1.711,
+          "lokacija_u_svemiru": "Sazvežđe Velikog Psa",
+          "udaljenost_od_zemlje_sg": 8.6
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 41,
+    "datum": "2024-01-28",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Beogradska Astronomska Opservatorija",
+      "lokacija_opis": "Opservatorija na Zvezdari, osnivana 1891. godine",
+      "geografske_koordinate": "44.8036° N, 20.5151° E",
+      "nadmorska_visina_m": 254.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Spektralna Analiza Alfa Centauri Sistema",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Nukleosinteza Velikog Praska",
+        "opis": "Teorija o formiranju lakih elemenata u prvih nekoliko minuta svemira"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 41,
+        "broj_ekspozicija": 24,
+        "izmerena_magnituda": 3.441,
+        "snr": 43.2,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Kinematicka merenja",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 31",
+          "tip": "Galaksija",
+          "velicina": 220000.0,
+          "lokacija_u_svemiru": "Sazvežđe Andromede",
+          "udaljenost_od_zemlje_sg": 2537000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 42,
+    "datum": "2024-02-14",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Beogradska Astronomska Opservatorija",
+      "lokacija_opis": "Opservatorija na Zvezdari, osnivana 1891. godine",
+      "geografske_koordinate": "44.8036° N, 20.5151° E",
+      "nadmorska_visina_m": 254.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Kinematika Zvezda u Mlečnom Putu",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Galaktička Dinamika",
+        "opis": "Teorija kretanja zvezda i gasova unutar galaksija"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 42,
+        "broj_ekspozicija": 16,
+        "izmerena_magnituda": 3.999,
+        "snr": 36.4,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Fotometrija M42",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 42",
+          "tip": "Maglina",
+          "velicina": 24.0,
+          "lokacija_u_svemiru": "Sazvežđe Orijona",
+          "udaljenost_od_zemlje_sg": 1344.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 43,
+    "datum": "2024-03-08",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Višnjanska Opservatorija",
+      "lokacija_opis": "Opservatorija u blizini Višnjana u Istri, poznata po otkrivanju asteroida",
+      "geografske_koordinate": "45.2983° N, 13.7253° E",
+      "nadmorska_visina_m": 152.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Fotometrija Zvezdanih Regiona u M42",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Teorija Magline",
+        "opis": "Model formiranja zvezdanih sistema iz međuzvezdane prašine i gasa"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 43,
+        "broj_ekspozicija": 28,
+        "izmerena_magnituda": 11.095,
+        "snr": 24.1,
+        "kvalitet_podataka": "dobar",
+        "napomena": "Karakterizacija orbite",
+        "nebeski_objekat": {
+          "naucni_naziv": "Proxima Centauri b",
+          "tip": "Egzoplaneta",
+          "velicina": 0.0001,
+          "lokacija_u_svemiru": "Sazvežđe Kentaura",
+          "udaljenost_od_zemlje_sg": 4.24
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 44,
+    "datum": "2024-03-22",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Effelsberg Radio Teleskop",
+      "lokacija_opis": "Veliki radio teleskop prečnika 100m u Nemačkoj",
+      "geografske_koordinate": "50.5247° N, 6.8828° E",
+      "nadmorska_visina_m": 369.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Posmatranje Džeta Galaksije M87",
+      "tip": "Radio_Astronomski_Eksperiment",
+      "naucna_teorija": {
+        "naziv": "Model Aktivnih Galaktičkih Jezgara",
+        "opis": "Teorija o supermasivnim crnim rupama u centrima galaksija"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 44,
+        "broj_ekspozicija": 20,
+        "izmerena_magnituda": 8.618,
+        "snr": 34.0,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Dzet analiza",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 87",
+          "tip": "Galaksija",
+          "velicina": 120000.0,
+          "lokacija_u_svemiru": "Sazvežđe Device",
+          "udaljenost_od_zemlje_sg": 53490000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 51,
+    "datum": "2024-06-05",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Beogradska Astronomska Opservatorija",
+      "lokacija_opis": "Opservatorija na Zvezdari, osnivana 1891. godine",
+      "geografske_koordinate": "44.8036° N, 20.5151° E",
+      "nadmorska_visina_m": 254.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Spektralna Klasifikacija Zvezda Glavnog Niza",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Lambda-CDM Model",
+        "opis": "Standardni kosmološki model koji opisuje svemir sa tamnom energijom i hladnom tamnom materijom"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 51,
+        "broj_ekspozicija": 28,
+        "izmerena_magnituda": -0.271,
+        "snr": 44.8,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Potvrda spektra Alfa Centauri",
+        "nebeski_objekat": {
+          "naucni_naziv": "Alpha Centauri System",
+          "tip": "Zvezda",
+          "velicina": 1.1,
+          "lokacija_u_svemiru": "Sazvežđe Kentaura",
+          "udaljenost_od_zemlje_sg": 4.37
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 52,
+    "datum": "2024-07-10",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "ESO La Silla",
+      "lokacija_opis": "Evropska južna opservatorija u Čileu na visini od 2400m",
+      "geografske_koordinate": "29.2563° S, 70.7300° W",
+      "nadmorska_visina_m": 2400.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Spektralna Klasifikacija Zvezda Glavnog Niza",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Lambda-CDM Model",
+        "opis": "Standardni kosmološki model koji opisuje svemir sa tamnom energijom i hladnom tamnom materijom"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 52,
+        "broj_ekspozicija": 20,
+        "izmerena_magnituda": 4.001,
+        "snr": 37.5,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Maglina Orijona detalji",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 42",
+          "tip": "Maglina",
+          "velicina": 24.0,
+          "lokacija_u_svemiru": "Sazvežđe Orijona",
+          "udaljenost_od_zemlje_sg": 1344.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 53,
+    "datum": "2024-06-12",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Radio Opservatorija Irig",
+      "lokacija_opis": "Radio opservatorija na Fruškoj gori, specijalizovana za radio astronomiju",
+      "geografske_koordinate": "45.1022° N, 19.8511° E",
+      "nadmorska_visina_m": 312.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Merenje Polarizacije CMB Signala",
+      "tip": "Radio_Astronomski_Eksperiment",
+      "naucna_teorija": {
+        "naziv": "Inflatorna Kosmologija",
+        "opis": "Teorija koja opisuje eksponencijalno širenje svemira u ranoj fazi nakon Velikog praska"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 53,
+        "broj_ekspozicija": 6,
+        "izmerena_magnituda": 4.108,
+        "snr": 15.1,
+        "kvalitet_podataka": "slab",
+        "napomena": "Slabi uslovi - previse oblaka",
+        "nebeski_objekat": {
+          "naucni_naziv": "Sgr A*",
+          "tip": "Crna_Rupa",
+          "velicina": 0.001,
+          "lokacija_u_svemiru": "Centar Mlečnog Puta",
+          "udaljenost_od_zemlje_sg": 26000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 55,
+    "datum": "2024-07-01",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "IceCube Istraživačka Stanica",
+      "lokacija_opis": "Podzemni detektor neutrina na Južnom polu dubine do 2450m",
+      "geografske_koordinate": "90.0000° S, 0.0000° E",
+      "nadmorska_visina_m": -1500.0,
+      "tip": "Podzemna_Istrazivacka_Stanica"
+    },
+    "eksperiment": {
+      "naziv": "Detekcija Solarnih Neutrina",
+      "tip": "Detekcija_Kozmickog_Zraca",
+      "naucna_teorija": {
+        "naziv": "Standardni Model Čestica",
+        "opis": "Teorija koja opisuje fundamentalne čestice i sile osim gravitacije"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 55,
+        "broj_ekspozicija": 10,
+        "izmerena_magnituda": 7.003,
+        "snr": 27.9,
+        "kvalitet_podataka": "dobar",
+        "napomena": "PSR B1919 tajming",
+        "nebeski_objekat": {
+          "naucni_naziv": "PSR B1919+21",
+          "tip": "Pulsar",
+          "velicina": 0.02,
+          "lokacija_u_svemiru": "Sazvežđe Lisice",
+          "udaljenost_od_zemlje_sg": 2283.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 57,
+    "datum": "2024-06-08",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Effelsberg Radio Teleskop",
+      "lokacija_opis": "Veliki radio teleskop prečnika 100m u Nemačkoj",
+      "geografske_koordinate": "50.5247° N, 6.8828° E",
+      "nadmorska_visina_m": 369.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Analiza Helijevih Linija u Spektru Belih Patuljaka",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Nukleosinteza Velikog Praska",
+        "opis": "Teorija o formiranju lakih elemenata u prvih nekoliko minuta svemira"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 57,
+        "broj_ekspozicija": 14,
+        "izmerena_magnituda": 8.612,
+        "snr": 32.8,
+        "kvalitet_podataka": "dobar",
+        "napomena": "M87 radio mapiranje",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 87",
+          "tip": "Galaksija",
+          "velicina": 120000.0,
+          "lokacija_u_svemiru": "Sazvežđe Device",
+          "udaljenost_od_zemlje_sg": 53490000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 58,
+    "datum": "2024-07-22",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Arecibo Nasledna Stanica",
+      "lokacija_opis": "Istraživačka stanica koja nastavlja rad nekadašnjeg Arecibo teleskopa u Portoriku",
+      "geografske_koordinate": "18.3464° N, 66.7528° W",
+      "nadmorska_visina_m": 497.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Radio Interferometrija Jezgra Galaksije Centaurus A",
+      "tip": "Radio_Astronomski_Eksperiment",
+      "naucna_teorija": {
+        "naziv": "Teorija Crnih Rupa",
+        "opis": "Opis nastanka i osobina singulariteta u prostor-vremenu"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 58,
+        "broj_ekspozicija": 28,
+        "izmerena_magnituda": 0.418,
+        "snr": 39.2,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Betelgeuse promenljivost",
+        "nebeski_objekat": {
+          "naucni_naziv": "Alpha Orionis",
+          "tip": "Zvezda",
+          "velicina": 887.0,
+          "lokacija_u_svemiru": "Sazvežđe Orijona",
+          "udaljenost_od_zemlje_sg": 700.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 59,
+    "datum": "2024-06-18",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "ESO La Silla",
+      "lokacija_opis": "Evropska južna opservatorija u Čileu na visini od 2400m",
+      "geografske_koordinate": "29.2563° S, 70.7300° W",
+      "nadmorska_visina_m": 2400.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Merenje Perioda Milisekundnih Pulsara",
+      "tip": "Radio_Astronomski_Eksperiment",
+      "naucna_teorija": {
+        "naziv": "Model Pulsara",
+        "opis": "Teorija o rotacionim neutronskim zvezdama koje emituju elektromagnetno zračenje"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 59,
+        "broj_ekspozicija": 32,
+        "izmerena_magnituda": 11.092,
+        "snr": 22.0,
+        "kvalitet_podataka": "dobar",
+        "napomena": "Kepler tranzit kriva",
+        "nebeski_objekat": {
+          "naucni_naziv": "Proxima Centauri b",
+          "tip": "Egzoplaneta",
+          "velicina": 0.0001,
+          "lokacija_u_svemiru": "Sazvežđe Kentaura",
+          "udaljenost_od_zemlje_sg": 4.24
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 61,
+    "datum": "2024-06-25",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Radio Opservatorija Irig",
+      "lokacija_opis": "Radio opservatorija na Fruškoj gori, specijalizovana za radio astronomiju",
+      "geografske_koordinate": "45.1022° N, 19.8511° E",
+      "nadmorska_visina_m": 312.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Mapiranje Spiralnih Krakova Mlečnog Puta",
+      "tip": "Radio_Astronomski_Eksperiment",
+      "naucna_teorija": {
+        "naziv": "Galaktička Dinamika",
+        "opis": "Teorija kretanja zvezda i gasova unutar galaksija"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 61,
+        "broj_ekspozicija": 26,
+        "izmerena_magnituda": -0.269,
+        "snr": 44.0,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Alfa Centauri potvrda",
+        "nebeski_objekat": {
+          "naucni_naziv": "Alpha Centauri System",
+          "tip": "Zvezda",
+          "velicina": 1.1,
+          "lokacija_u_svemiru": "Sazvežđe Kentaura",
+          "udaljenost_od_zemlje_sg": 4.37
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 62,
+    "datum": "2024-06-14",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Effelsberg Radio Teleskop",
+      "lokacija_opis": "Veliki radio teleskop prečnika 100m u Nemačkoj",
+      "geografske_koordinate": "50.5247° N, 6.8828° E",
+      "nadmorska_visina_m": 369.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Fotometrija Ostataka Supernove Kasiopeja A",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Teorija Supernovae",
+        "opis": "Model eksplozivne smrti masivnih zvezda i njihovog uticaja na okolinu"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 62,
+        "broj_ekspozicija": 18,
+        "izmerena_magnituda": 3.998,
+        "snr": 38.1,
+        "kvalitet_podataka": "odlican",
+        "napomena": "M42 spektar emisije",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 42",
+          "tip": "Maglina",
+          "velicina": 24.0,
+          "lokacija_u_svemiru": "Sazvežđe Orijona",
+          "udaljenost_od_zemlje_sg": 1344.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 64,
+    "datum": "2024-06-30",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "IceCube Istraživačka Stanica",
+      "lokacija_opis": "Podzemni detektor neutrina na Južnom polu dubine do 2450m",
+      "geografske_koordinate": "90.0000° S, 0.0000° E",
+      "nadmorska_visina_m": -1500.0,
+      "tip": "Podzemna_Istrazivacka_Stanica"
+    },
+    "eksperiment": {
+      "naziv": "Radijalna Brzina Egzoplanete 51 Pegasi b",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Relativistički Džetovi",
+        "opis": "Teorija o mlazevima materije koji se emituju iz aktivnih galaktičkih jezgara"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 64,
+        "broj_ekspozicija": 14,
+        "izmerena_magnituda": 8.402,
+        "snr": 30.9,
+        "kvalitet_podataka": "dobar",
+        "napomena": "M51 galakticki krakovi",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 51a",
+          "tip": "Galaksija",
+          "velicina": 60000.0,
+          "lokacija_u_svemiru": "Sazvežđe Lovačkih Pasa",
+          "udaljenost_od_zemlje_sg": 23160000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 65,
+    "datum": "2024-07-08",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Pierre Auger Opservatorija",
+      "lokacija_opis": "Najveći detektor kozmičkih zraka u Argentini",
+      "geografske_koordinate": "35.2000° S, 69.3833° W",
+      "nadmorska_visina_m": 1400.0,
+      "tip": "Podzemna_Istrazivacka_Stanica"
+    },
+    "eksperiment": {
+      "naziv": "Abundancija Teških Elemenata u Globularnom Skupu",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Zvezdana Nukleosinteza",
+        "opis": "Teorija o formiranju teških elemenata unutar zvezda"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 65,
+        "broj_ekspozicija": 16,
+        "izmerena_magnituda": 7.008,
+        "snr": 28.6,
+        "kvalitet_podataka": "dobar",
+        "napomena": "Pulsar polarizacija",
+        "nebeski_objekat": {
+          "naucni_naziv": "PSR B1919+21",
+          "tip": "Pulsar",
+          "velicina": 0.02,
+          "lokacija_u_svemiru": "Sazvežđe Lisice",
+          "udaljenost_od_zemlje_sg": 2283.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 67,
+    "datum": "2024-07-25",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Mauna Kea Opservatorija",
+      "lokacija_opis": "Kompleks opservatorija na vrhu vulkana na Havajima",
+      "geografske_koordinate": "19.8228° N, 155.4695° W",
+      "nadmorska_visina_m": 4205.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Detekcija Gravitacionih Talasa GW230614",
+      "tip": "Detekcija_Kozmickog_Zraca",
+      "naucna_teorija": {
+        "naziv": "Teorija Gravitacionih Talasa",
+        "opis": "Opis talasnih poremećaja u prostor-vremenu nastalih od masivnih objekata"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 67,
+        "broj_ekspozicija": 12,
+        "izmerena_magnituda": 4.097,
+        "snr": 34.3,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Sgr A* flux",
+        "nebeski_objekat": {
+          "naucni_naziv": "Sgr A*",
+          "tip": "Crna_Rupa",
+          "velicina": 0.001,
+          "lokacija_u_svemiru": "Centar Mlečnog Puta",
+          "udaljenost_od_zemlje_sg": 26000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 68,
+    "datum": "2024-06-10",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Beogradska Astronomska Opservatorija",
+      "lokacija_opis": "Opservatorija na Zvezdari, osnivana 1891. godine",
+      "geografske_koordinate": "44.8036° N, 20.5151° E",
+      "nadmorska_visina_m": 254.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Dugoročna Fotometrija Promenljive Zvezde Delta Cep",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Model Zvezdane Evolucije",
+        "opis": "Teorija o životnom ciklusu zvezda od nastanka do kraja"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 68,
+        "broj_ekspozicija": 20,
+        "izmerena_magnituda": 5.099,
+        "snr": 40.8,
+        "kvalitet_podataka": "odlican",
+        "napomena": "NGC 6992 filamenti",
+        "nebeski_objekat": {
+          "naucni_naziv": "NGC 6992",
+          "tip": "Maglina",
+          "velicina": 110.0,
+          "lokacija_u_svemiru": "Sazvežđe Labuda",
+          "udaljenost_od_zemlje_sg": 1470.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 69,
+    "datum": "2024-07-14",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Radio Opservatorija Irig",
+      "lokacija_opis": "Radio opservatorija na Fruškoj gori, specijalizovana za radio astronomiju",
+      "geografske_koordinate": "45.1022° N, 19.8511° E",
+      "nadmorska_visina_m": 312.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Anizotropija Kozmičkih Zraka Iznad 10^20 eV",
+      "tip": "Detekcija_Kozmickog_Zraca",
+      "naucna_teorija": {
+        "naziv": "Teorija Tamne Energije",
+        "opis": "Model koji objašnjava ubrzano širenje svemira"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 69,
+        "broj_ekspozicija": 24,
+        "izmerena_magnituda": 3.438,
+        "snr": 43.5,
+        "kvalitet_podataka": "odlican",
+        "napomena": "M31 crveni pomak precizno",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 31",
+          "tip": "Galaksija",
+          "velicina": 220000.0,
+          "lokacija_u_svemiru": "Sazvežđe Andromede",
+          "udaljenost_od_zemlje_sg": 2537000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 70,
+    "datum": "2024-06-28",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "ESO La Silla",
+      "lokacija_opis": "Evropska južna opservatorija u Čileu na visini od 2400m",
+      "geografske_koordinate": "29.2563° S, 70.7300° W",
+      "nadmorska_visina_m": 2400.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Kinematika Galaksija u Supergrozdu Laniakea",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Teorija Tamne Energije",
+        "opis": "Model koji objašnjava ubrzano širenje svemira"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 70,
+        "broj_ekspozicija": 16,
+        "izmerena_magnituda": -1.462,
+        "snr": 45.9,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Sirijus apsolutna magnituda",
+        "nebeski_objekat": {
+          "naucni_naziv": "Sirius A",
+          "tip": "Zvezda",
+          "velicina": 1.711,
+          "lokacija_u_svemiru": "Sazvežđe Velikog Psa",
+          "udaljenost_od_zemlje_sg": 8.6
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 71,
+    "datum": "2024-07-20",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Effelsberg Radio Teleskop",
+      "lokacija_opis": "Veliki radio teleskop prečnika 100m u Nemačkoj",
+      "geografske_koordinate": "50.5247° N, 6.8828° E",
+      "nadmorska_visina_m": 369.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Posmatranje Galaksije Sombrero M104",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Lambda-CDM Model",
+        "opis": "Standardni kosmološki model koji opisuje svemir sa tamnom energijom i hladnom tamnom materijom"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 71,
+        "broj_ekspozicija": 26,
+        "izmerena_magnituda": 11.096,
+        "snr": 21.7,
+        "kvalitet_podataka": "dobar",
+        "napomena": "Kepler-452b orbita",
+        "nebeski_objekat": {
+          "naucni_naziv": "Proxima Centauri b",
+          "tip": "Egzoplaneta",
+          "velicina": 0.0001,
+          "lokacija_u_svemiru": "Sazvežđe Kentaura",
+          "udaljenost_od_zemlje_sg": 4.24
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 72,
+    "datum": "2024-06-16",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Višnjanska Opservatorija",
+      "lokacija_opis": "Opservatorija u blizini Višnjana u Istri, poznata po otkrivanju asteroida",
+      "geografske_koordinate": "45.2983° N, 13.7253° E",
+      "nadmorska_visina_m": 152.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Radio Emisija Ostataka Supernove Kasiopeja A",
+      "tip": "Radio_Astronomski_Eksperiment",
+      "naucna_teorija": {
+        "naziv": "Teorija Tamne Materije",
+        "opis": "Model koji objašnjava gravitacione efekte nevidljive materije u galaksijama"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 72,
+        "broj_ekspozicija": 20,
+        "izmerena_magnituda": 4.000,
+        "snr": 37.0,
+        "kvalitet_podataka": "odlican",
+        "napomena": "M42 nova zvezda",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 42",
+          "tip": "Maglina",
+          "velicina": 24.0,
+          "lokacija_u_svemiru": "Sazvežđe Orijona",
+          "udaljenost_od_zemlje_sg": 1344.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 74,
+    "datum": "2024-06-04",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "IceCube Istraživačka Stanica",
+      "lokacija_opis": "Podzemni detektor neutrina na Južnom polu dubine do 2450m",
+      "geografske_koordinate": "90.0000° S, 0.0000° E",
+      "nadmorska_visina_m": -1500.0,
+      "tip": "Podzemna_Istrazivacka_Stanica"
+    },
+    "eksperiment": {
+      "naziv": "Disperzija Signala Pulsara u Maglini",
+      "tip": "Radio_Astronomski_Eksperiment",
+      "naucna_teorija": {
+        "naziv": "Model Pulsara",
+        "opis": "Teorija o rotacionim neutronskim zvezdama koje emituju elektromagnetno zračenje"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 74,
+        "broj_ekspozicija": 18,
+        "izmerena_magnituda": 8.614,
+        "snr": 33.2,
+        "kvalitet_podataka": "dobar",
+        "napomena": "M87 relativisticiki dzet",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 87",
+          "tip": "Galaksija",
+          "velicina": 120000.0,
+          "lokacija_u_svemiru": "Sazvežđe Device",
+          "udaljenost_od_zemlje_sg": 53490000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 75,
+    "datum": "2024-07-12",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Beogradska Astronomska Opservatorija",
+      "lokacija_opis": "Opservatorija na Zvezdari, osnivana 1891. godine",
+      "geografske_koordinate": "44.8036° N, 20.5151° E",
+      "nadmorska_visina_m": 254.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Formiranje Zvezda u Galaksiji M33",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Teorija Magline",
+        "opis": "Model formiranja zvezdanih sistema iz međuzvezdane prašine i gasa"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 75,
+        "broj_ekspozicija": 28,
+        "izmerena_magnituda": 11.091,
+        "snr": 22.5,
+        "kvalitet_podataka": "dobar",
+        "napomena": "Tranzit signal slab",
+        "nebeski_objekat": {
+          "naucni_naziv": "Proxima Centauri b",
+          "tip": "Egzoplaneta",
+          "velicina": 0.0001,
+          "lokacija_u_svemiru": "Sazvežđe Kentaura",
+          "udaljenost_od_zemlje_sg": 4.24
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 76,
+    "datum": "2024-06-26",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Radio Opservatorija Irig",
+      "lokacija_opis": "Radio opservatorija na Fruškoj gori, specijalizovana za radio astronomiju",
+      "geografske_koordinate": "45.1022° N, 19.8511° E",
+      "nadmorska_visina_m": 312.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Formiranje Zvezda u Galaksiji M33",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Teorija Magline",
+        "opis": "Model formiranja zvezdanih sistema iz međuzvezdane prašine i gasa"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 76,
+        "broj_ekspozicija": 24,
+        "izmerena_magnituda": 0.421,
+        "snr": 38.5,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Betelgeuse sjajnost",
+        "nebeski_objekat": {
+          "naucni_naziv": "Alpha Orionis",
+          "tip": "Zvezda",
+          "velicina": 887.0,
+          "lokacija_u_svemiru": "Sazvežđe Orijona",
+          "udaljenost_od_zemlje_sg": 700.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 77,
+    "datum": "2024-06-08",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Mauna Kea Opservatorija",
+      "lokacija_opis": "Kompleks opservatorija na vrhu vulkana na Havajima",
+      "geografske_koordinate": "19.8228° N, 155.4695° W",
+      "nadmorska_visina_m": 4205.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Rentgensko Posmatranje Neutronske Zvezde",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Lambda-CDM Model",
+        "opis": "Standardni kosmološki model koji opisuje svemir sa tamnom energijom i hladnom tamnom materijom"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 77,
+        "broj_ekspozicija": 30,
+        "izmerena_magnituda": -0.272,
+        "snr": 45.1,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Alfa Centauri merenje",
+        "nebeski_objekat": {
+          "naucni_naziv": "Alpha Centauri System",
+          "tip": "Zvezda",
+          "velicina": 1.1,
+          "lokacija_u_svemiru": "Sazvežđe Kentaura",
+          "udaljenost_od_zemlje_sg": 4.37
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 78,
+    "datum": "2024-06-20",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "ESO La Silla",
+      "lokacija_opis": "Evropska južna opservatorija u Čileu na visini od 2400m",
+      "geografske_koordinate": "29.2563° S, 70.7300° W",
+      "nadmorska_visina_m": 2400.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "VLBI Mapiranje Kvazara 3C 273",
+      "tip": "Radio_Astronomski_Eksperiment",
+      "naucna_teorija": {
+        "naziv": "Relativistički Džetovi",
+        "opis": "Teorija o mlazevima materije koji se emituju iz aktivnih galaktičkih jezgara"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 78,
+        "broj_ekspozicija": 12,
+        "izmerena_magnituda": 13.496,
+        "snr": 21.0,
+        "kvalitet_podataka": "dobar",
+        "napomena": "Auger spektar zraka",
+        "nebeski_objekat": {
+          "naucni_naziv": "Kepler-452b",
+          "tip": "Egzoplaneta",
+          "velicina": 0.0001,
+          "lokacija_u_svemiru": "Sazvežđe Labuda",
+          "udaljenost_od_zemlje_sg": 1400.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 79,
+    "datum": "2024-07-12",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Beogradska Astronomska Opservatorija",
+      "lokacija_opis": "Opservatorija na Zvezdari, osnivana 1891. godine",
+      "geografske_koordinate": "44.8036° N, 20.5151° E",
+      "nadmorska_visina_m": 254.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Infracrvena Fotometrija Maglina Labudovog Vrata",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Teorija Magline",
+        "opis": "Model formiranja zvezdanih sistema iz međuzvezdane prašine i gasa"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 79,
+        "broj_ekspozicija": 16,
+        "izmerena_magnituda": 4.002,
+        "snr": 34.7,
+        "kvalitet_podataka": "odlican",
+        "napomena": "M42 H-alfa emisija",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 42",
+          "tip": "Maglina",
+          "velicina": 24.0,
+          "lokacija_u_svemiru": "Sazvežđe Orijona",
+          "udaljenost_od_zemlje_sg": 1344.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 80,
+    "datum": "2024-06-26",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Radio Opservatorija Irig",
+      "lokacija_opis": "Radio opservatorija na Fruškoj gori, specijalizovana za radio astronomiju",
+      "geografske_koordinate": "45.1022° N, 19.8511° E",
+      "nadmorska_visina_m": 312.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Infracrvena Fotometrija Maglina Labudovog Vrata",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Teorija Magline",
+        "opis": "Model formiranja zvezdanih sistema iz međuzvezdane prašine i gasa"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 80,
+        "broj_ekspozicija": 10,
+        "izmerena_magnituda": 4.094,
+        "snr": 35.0,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Sgr A* infracrveno",
+        "nebeski_objekat": {
+          "naucni_naziv": "Sgr A*",
+          "tip": "Crna_Rupa",
+          "velicina": 0.001,
+          "lokacija_u_svemiru": "Centar Mlečnog Puta",
+          "udaljenost_od_zemlje_sg": 26000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 81,
+    "datum": "2024-07-16",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Arecibo Nasledna Stanica",
+      "lokacija_opis": "Istraživačka stanica koja nastavlja rad nekadašnjeg Arecibo teleskopa u Portoriku",
+      "geografske_koordinate": "18.3464° N, 66.7528° W",
+      "nadmorska_visina_m": 497.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Precizna Astrometrija Sistema TRAPPIST-1",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Relativistički Džetovi",
+        "opis": "Teorija o mlazevima materije koji se emituju iz aktivnih galaktičkih jezgara"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 81,
+        "broj_ekspozicija": 30,
+        "izmerena_magnituda": 11.090,
+        "snr": 22.2,
+        "kvalitet_podataka": "dobar",
+        "napomena": "Kepler tranzit dubina",
+        "nebeski_objekat": {
+          "naucni_naziv": "Proxima Centauri b",
+          "tip": "Egzoplaneta",
+          "velicina": 0.0001,
+          "lokacija_u_svemiru": "Sazvežđe Kentaura",
+          "udaljenost_od_zemlje_sg": 4.24
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 82,
+    "datum": "2024-06-08",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Mauna Kea Opservatorija",
+      "lokacija_opis": "Kompleks opservatorija na vrhu vulkana na Havajima",
+      "geografske_koordinate": "19.8228° N, 155.4695° W",
+      "nadmorska_visina_m": 4205.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Precizna Astrometrija Sistema TRAPPIST-1",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Relativistički Džetovi",
+        "opis": "Teorija o mlazevima materije koji se emituju iz aktivnih galaktičkih jezgara"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 82,
+        "broj_ekspozicija": 20,
+        "izmerena_magnituda": -1.460,
+        "snr": 46.5,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Sirijus UV spektar",
+        "nebeski_objekat": {
+          "naucni_naziv": "Sirius A",
+          "tip": "Zvezda",
+          "velicina": 1.711,
+          "lokacija_u_svemiru": "Sazvežđe Velikog Psa",
+          "udaljenost_od_zemlje_sg": 8.6
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 83,
+    "datum": "2024-07-24",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Effelsberg Radio Teleskop",
+      "lokacija_opis": "Veliki radio teleskop prečnika 100m u Nemačkoj",
+      "geografske_koordinate": "50.5247° N, 6.8828° E",
+      "nadmorska_visina_m": 369.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Multi-Glasnik Posmatranje Kratkog GRB",
+      "tip": "Detekcija_Kozmickog_Zraca",
+      "naucna_teorija": {
+        "naziv": "Teorija Gravitacionih Talasa",
+        "opis": "Opis talasnih poremećaja u prostor-vremenu nastalih od masivnih objekata"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 83,
+        "broj_ekspozicija": 22,
+        "izmerena_magnituda": 3.441,
+        "snr": 42.0,
+        "kvalitet_podataka": "odlican",
+        "napomena": "M31 spiralni krakovi",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 31",
+          "tip": "Galaksija",
+          "velicina": 220000.0,
+          "lokacija_u_svemiru": "Sazvežđe Andromede",
+          "udaljenost_od_zemlje_sg": 2537000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 84,
+    "datum": "2024-06-20",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "ESO La Silla",
+      "lokacija_opis": "Evropska južna opservatorija u Čileu na visini od 2400m",
+      "geografske_koordinate": "29.2563° S, 70.7300° W",
+      "nadmorska_visina_m": 2400.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Multi-Glasnik Posmatranje Kratkog GRB",
+      "tip": "Detekcija_Kozmickog_Zraca",
+      "naucna_teorija": {
+        "naziv": "Teorija Gravitacionih Talasa",
+        "opis": "Opis talasnih poremećaja u prostor-vremenu nastalih od masivnih objekata"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 84,
+        "broj_ekspozicija": 18,
+        "izmerena_magnituda": 8.487,
+        "snr": 37.3,
+        "kvalitet_podataka": "odlican",
+        "napomena": "M20 IR posmatranje",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 20",
+          "tip": "Maglina",
+          "velicina": 28.0,
+          "lokacija_u_svemiru": "Sazvežđe Strelca",
+          "udaljenost_od_zemlje_sg": 5200.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 85,
+    "datum": "2024-07-12",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Beogradska Astronomska Opservatorija",
+      "lokacija_opis": "Opservatorija na Zvezdari, osnivana 1891. godine",
+      "geografske_koordinate": "44.8036° N, 20.5151° E",
+      "nadmorska_visina_m": 254.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Tranzit Egzoplaneta Kepler Sistema",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Relativistički Džetovi",
+        "opis": "Teorija o mlazevima materije koji se emituju iz aktivnih galaktičkih jezgara"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 85,
+        "broj_ekspozicija": 14,
+        "izmerena_magnituda": 7.004,
+        "snr": 29.2,
+        "kvalitet_podataka": "dobar",
+        "napomena": "PSR B1919 profil pulsa",
+        "nebeski_objekat": {
+          "naucni_naziv": "PSR B1919+21",
+          "tip": "Pulsar",
+          "velicina": 0.02,
+          "lokacija_u_svemiru": "Sazvežđe Lisice",
+          "udaljenost_od_zemlje_sg": 2283.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 87,
+    "datum": "2024-06-08",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Mauna Kea Opservatorija",
+      "lokacija_opis": "Kompleks opservatorija na vrhu vulkana na Havajima",
+      "geografske_koordinate": "19.8228° N, 155.4695° W",
+      "nadmorska_visina_m": 4205.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Hemijski Sastav Supernova Ostataka",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Teorija Supernovae",
+        "opis": "Model eksplozivne smrti masivnih zvezda i njihovog uticaja na okolinu"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 87,
+        "broj_ekspozicija": 22,
+        "izmerena_magnituda": 5.101,
+        "snr": 39.8,
+        "kvalitet_podataka": "odlican",
+        "napomena": "NGC 6992 rentgenski emisija",
+        "nebeski_objekat": {
+          "naucni_naziv": "NGC 6992",
+          "tip": "Maglina",
+          "velicina": 110.0,
+          "lokacija_u_svemiru": "Sazvežđe Labuda",
+          "udaljenost_od_zemlje_sg": 1470.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 88,
+    "datum": "2024-06-20",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "ESO La Silla",
+      "lokacija_opis": "Evropska južna opservatorija u Čileu na visini od 2400m",
+      "geografske_koordinate": "29.2563° S, 70.7300° W",
+      "nadmorska_visina_m": 2400.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Merenje Mase Crne Rupe M87",
+      "tip": "Radio_Astronomski_Eksperiment",
+      "naucna_teorija": {
+        "naziv": "Teorija Crnih Rupa",
+        "opis": "Opis nastanka i osobina singulariteta u prostor-vremenu"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 88,
+        "broj_ekspozicija": 16,
+        "izmerena_magnituda": 8.616,
+        "snr": 32.1,
+        "kvalitet_podataka": "dobar",
+        "napomena": "M87 jezgro radio",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 87",
+          "tip": "Galaksija",
+          "velicina": 120000.0,
+          "lokacija_u_svemiru": "Sazvežđe Device",
+          "udaljenost_od_zemlje_sg": 53490000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 90,
+    "datum": "2024-06-26",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Radio Opservatorija Irig",
+      "lokacija_opis": "Radio opservatorija na Fruškoj gori, specijalizovana za radio astronomiju",
+      "geografske_koordinate": "45.1022° N, 19.8511° E",
+      "nadmorska_visina_m": 312.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Merenje CMB Anizotropije",
+      "tip": "Radio_Astronomski_Eksperiment",
+      "naucna_teorija": {
+        "naziv": "Kozmičko Mikrotalasno Pozadinsko Zračenje",
+        "opis": "Teorija o reliknom zračenju iz ranog svemira"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 90,
+        "broj_ekspozicija": 20,
+        "izmerena_magnituda": 3.999,
+        "snr": 36.7,
+        "kvalitet_podataka": "odlican",
+        "napomena": "M42 trapez klaster",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 42",
+          "tip": "Maglina",
+          "velicina": 24.0,
+          "lokacija_u_svemiru": "Sazvežđe Orijona",
+          "udaljenost_od_zemlje_sg": 1344.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 91,
+    "datum": "2024-06-08",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Mauna Kea Opservatorija",
+      "lokacija_opis": "Kompleks opservatorija na vrhu vulkana na Havajima",
+      "geografske_koordinate": "19.8228° N, 155.4695° W",
+      "nadmorska_visina_m": 4205.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Spektralna Analiza Alfa Centauri Sistema",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Nukleosinteza Velikog Praska",
+        "opis": "Teorija o formiranju lakih elemenata u prvih nekoliko minuta svemira"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 91,
+        "broj_ekspozicija": 28,
+        "izmerena_magnituda": -0.270,
+        "snr": 44.5,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Alfa Centauri B spektar",
+        "nebeski_objekat": {
+          "naucni_naziv": "Alpha Centauri System",
+          "tip": "Zvezda",
+          "velicina": 1.1,
+          "lokacija_u_svemiru": "Sazvežđe Kentaura",
+          "udaljenost_od_zemlje_sg": 4.37
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 92,
+    "datum": "2024-06-20",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "ESO La Silla",
+      "lokacija_opis": "Evropska južna opservatorija u Čileu na visini od 2400m",
+      "geografske_koordinate": "29.2563° S, 70.7300° W",
+      "nadmorska_visina_m": 2400.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Posmatranje Džeta Galaksije M87",
+      "tip": "Radio_Astronomski_Eksperiment",
+      "naucna_teorija": {
+        "naziv": "Model Aktivnih Galaktičkih Jezgara",
+        "opis": "Teorija o supermasivnim crnim rupama u centrima galaksija"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 92,
+        "broj_ekspozicija": 16,
+        "izmerena_magnituda": 8.401,
+        "snr": 31.8,
+        "kvalitet_podataka": "dobar",
+        "napomena": "M51 interakcija",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 51a",
+          "tip": "Galaksija",
+          "velicina": 60000.0,
+          "lokacija_u_svemiru": "Sazvežđe Lovačkih Pasa",
+          "udaljenost_od_zemlje_sg": 23160000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 94,
+    "datum": "2024-06-26",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Radio Opservatorija Irig",
+      "lokacija_opis": "Radio opservatorija na Fruškoj gori, specijalizovana za radio astronomiju",
+      "geografske_koordinate": "45.1022° N, 19.8511° E",
+      "nadmorska_visina_m": 312.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Fotometrija Zvezdanih Regiona u M42",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Teorija Magline",
+        "opis": "Model formiranja zvezdanih sistema iz međuzvezdane prašine i gasa"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 94,
+        "broj_ekspozicija": 26,
+        "izmerena_magnituda": 3.440,
+        "snr": 43.0,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Andromeda fotometrija",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 31",
+          "tip": "Galaksija",
+          "velicina": 220000.0,
+          "lokacija_u_svemiru": "Sazvežđe Andromede",
+          "udaljenost_od_zemlje_sg": 2537000.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 95,
+    "datum": "2024-07-12",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Beogradska Astronomska Opservatorija",
+      "lokacija_opis": "Opservatorija na Zvezdari, osnivana 1891. godine",
+      "geografske_koordinate": "44.8036° N, 20.5151° E",
+      "nadmorska_visina_m": 254.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Karakterizacija Orbite Kepler-452b",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Teorija Egzoplaneta",
+        "opis": "Modeli formiranja i evolucije planeta oko drugih zvezda"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 95,
+        "broj_ekspozicija": 22,
+        "izmerena_magnituda": 0.419,
+        "snr": 38.0,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Betelgeuse pulsacije",
+        "nebeski_objekat": {
+          "naucni_naziv": "Alpha Orionis",
+          "tip": "Zvezda",
+          "velicina": 887.0,
+          "lokacija_u_svemiru": "Sazvežđe Orijona",
+          "udaljenost_od_zemlje_sg": 700.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 96,
+    "datum": "2024-06-08",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Mauna Kea Opservatorija",
+      "lokacija_opis": "Kompleks opservatorija na vrhu vulkana na Havajima",
+      "geografske_koordinate": "19.8228° N, 155.4695° W",
+      "nadmorska_visina_m": 4205.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Karakterizacija Orbite Kepler-452b",
+      "tip": "Opticka_Teleskopska_Opservacija",
+      "naucna_teorija": {
+        "naziv": "Teorija Egzoplaneta",
+        "opis": "Modeli formiranja i evolucije planeta oko drugih zvezda"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 96,
+        "broj_ekspozicija": 18,
+        "izmerena_magnituda": -1.461,
+        "snr": 46.8,
+        "kvalitet_podataka": "odlican",
+        "napomena": "Sirijus binarna veza",
+        "nebeski_objekat": {
+          "naucni_naziv": "Sirius A",
+          "tip": "Zvezda",
+          "velicina": 1.711,
+          "lokacija_u_svemiru": "Sazvežđe Velikog Psa",
+          "udaljenost_od_zemlje_sg": 8.6
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 97,
+    "datum": "2024-07-24",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "Effelsberg Radio Teleskop",
+      "lokacija_opis": "Veliki radio teleskop prečnika 100m u Nemačkoj",
+      "geografske_koordinate": "50.5247° N, 6.8828° E",
+      "nadmorska_visina_m": 369.0,
+      "tip": "Radio_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Multi-Glasnik Astronomija Neutronskih Zvezda",
+      "tip": "Detekcija_Kozmickog_Zraca",
+      "naucna_teorija": {
+        "naziv": "Teorija Gravitacionih Talasa",
+        "opis": "Opis talasnih poremećaja u prostor-vremenu nastalih od masivnih objekata"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 97,
+        "broj_ekspozicija": 12,
+        "izmerena_magnituda": 7.007,
+        "snr": 28.0,
+        "kvalitet_podataka": "dobar",
+        "napomena": "Pulsar dispersija",
+        "nebeski_objekat": {
+          "naucni_naziv": "PSR B1919+21",
+          "tip": "Pulsar",
+          "velicina": 0.02,
+          "lokacija_u_svemiru": "Sazvežđe Lisice",
+          "udaljenost_od_zemlje_sg": 2283.0
+        }
+      }
+    ]
+  },
+  {
+    "izvodjenje_id": 99,
+    "datum": "2024-06-20",
+    "status": "zavrseno_uspesno",
+    "laboratorija": {
+      "naziv": "ESO La Silla",
+      "lokacija_opis": "Evropska južna opservatorija u Čileu na visini od 2400m",
+      "geografske_koordinate": "29.2563° S, 70.7300° W",
+      "nadmorska_visina_m": 2400.0,
+      "tip": "Opticka_Opservatorija"
+    },
+    "eksperiment": {
+      "naziv": "Multi-Glasnik Astronomija Neutronskih Zvezda",
+      "tip": "Detekcija_Kozmickog_Zraca",
+      "naucna_teorija": {
+        "naziv": "Teorija Gravitacionih Talasa",
+        "opis": "Opis talasnih poremećaja u prostor-vremenu nastalih od masivnih objekata"
+      }
+    },
+    "opservacije": [
+      {
+        "opservacija_id": 99,
+        "broj_ekspozicija": 14,
+        "izmerena_magnituda": 8.611,
+        "snr": 31.5,
+        "kvalitet_podataka": "dobar",
+        "napomena": "M87 varijabilnost",
+        "nebeski_objekat": {
+          "naucni_naziv": "Messier 87",
+          "tip": "Galaksija",
+          "velicina": 120000.0,
+          "lokacija_u_svemiru": "Sazvežđe Device",
+          "udaljenost_od_zemlje_sg": 53490000.0
+        }
+      }
+    ]
+  }
+]

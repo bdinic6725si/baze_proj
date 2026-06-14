@@ -1,7 +1,11 @@
+import org.bson.Document;
+import org.bson.json.JsonWriterSettings;
+
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.sql.*;
+import java.util.List;
 
 public class MainMenuForm extends JFrame {
 
@@ -47,11 +51,15 @@ public class MainMenuForm extends JFrame {
         gbc.gridy = 5;
         panel.add(btnObrisiLab, gbc);
 
+        JButton btnNoSQLRezultati = createMenuButton("Detaljni rezultati eksperimenata (NoSQL)");
+        gbc.gridy = 6;
+        panel.add(btnNoSQLRezultati, gbc);
+
         JButton btnOdjava = new JButton("Odjavi se");
         btnOdjava.setBorderPainted(false);
         btnOdjava.setContentAreaFilled(false);
         btnOdjava.setForeground(Color.RED);
-        gbc.gridy = 6;
+        gbc.gridy = 7;
         panel.add(btnOdjava, gbc);
 
         add(panel);
@@ -59,6 +67,7 @@ public class MainMenuForm extends JFrame {
         btnSesije.addActionListener(e -> new SesijeForm().setVisible(true));
         btnPromeniSesiju.addActionListener(e -> new PromeniSesijuForm().setVisible(true));
         btnObrisiLab.addActionListener(e -> new ObrisiLaboratorijuForm().setVisible(true));
+        btnNoSQLRezultati.addActionListener(e -> new UspesniEksperimentiForm().setVisible(true));
         btnOdjava.addActionListener(e -> {
             new AuthForms.LoginForm().setVisible(true);
             dispose();
@@ -531,6 +540,166 @@ class ObrisiLaboratorijuForm extends JFrame {
             );
         } finally {
             try { conn.setAutoCommit(true); } catch (SQLException e) { e.printStackTrace(); }
+        }
+    }
+}
+
+class UspesniEksperimentiForm extends JFrame {
+
+    private JTable table;
+    private DefaultTableModel model;
+    private JTextArea txtMongoDetalji;
+
+    public UspesniEksperimentiForm() {
+        setTitle("Rezultati uspešno završenih eksperimenata (Hibridni Prikaz)");
+        setSize(1000, 600); // Blago povećano radi više detalja
+        setLocationRelativeTo(null);
+        setLayout(new BorderLayout());
+
+        // Gornji info panel
+        JPanel infoPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+        infoPanel.add(new JLabel("  Izaberite eksperiment iz MySQL baze da biste učitali detaljne podatke iz MongoDB baze."));
+        add(infoPanel, BorderLayout.NORTH);
+
+        // SplitPane deli prozor na levi (tabela) i desni (MongoDB detalji) deo
+        JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
+        splitPane.setDividerLocation(450);
+
+        // LEVA STRANA: Tabela sa uspešnim eksperimentima iz MySQL-a
+        String[] columns = {"ID Izvođenja", "Naziv Eksperimenta", "Laboratorija", "Datum"};
+        model = new DefaultTableModel(columns, 0) {
+            @Override
+            public boolean isCellEditable(int r, int c) { return false; }
+        };
+        table = new JTable(model);
+        table.setRowHeight(25);
+        table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        JScrollPane scrollTabela = new JScrollPane(table);
+        splitPane.setLeftComponent(scrollTabela);
+
+        // DESNA STRANA: Prikaz NoSQL dokumenta
+        JPanel desniPanel = new JPanel(new BorderLayout());
+        desniPanel.setBorder(BorderFactory.createTitledBorder("Struktura MongoDB Dokumenta (Kompletna Analiza)"));
+
+        txtMongoDetalji = new JTextArea();
+        txtMongoDetalji.setEditable(false);
+        txtMongoDetalji.setFont(new Font("Monospaced", Font.PLAIN, 13));
+        txtMongoDetalji.setBackground(new Color(245, 245, 245));
+        JScrollPane scrollMongo = new JScrollPane(txtMongoDetalji);
+        desniPanel.add(scrollMongo, BorderLayout.CENTER);
+        splitPane.setRightComponent(desniPanel);
+
+        add(splitPane, BorderLayout.CENTER);
+
+        // Učitaj podatke iz MySQL-a
+        ucitajUspesnaIzvodjenja();
+
+        // DOGAĐAJ: Klik na red u tabeli
+        table.getSelectionModel().addListSelectionListener(e -> {
+            if (!e.getValueIsAdjusting()) {
+                int selectedRow = table.getSelectedRow();
+                if (selectedRow >= 0) {
+                    int idIzvodjenja = (int) model.getValueAt(selectedRow, 0);
+                    prikaziMongoDBDetalje(idIzvodjenja);
+                }
+            }
+        });
+    }
+
+    private void ucitajUspesnaIzvodjenja() {
+        model.setRowCount(0);
+
+        // POPRAVKA: Izmenjen ORDER BY da sortira po ID-u rastuće (ASC)
+        String sql = """
+            SELECT iz.ID_Izvodjenja, e.Naziv AS Eksperiment, l.Naziv AS Laboratorija, iz.Datum
+            FROM Izvodjenje iz
+            JOIN Eksperiment e ON e.ID_Eksperimenta = iz.ID_Eksperimenta
+            JOIN Laboratorija l ON l.ID_Lab = iz.ID_Lab
+            WHERE iz.Status = 'zavrseno_uspesno'
+            ORDER BY iz.ID_Izvodjenja ASC
+            """;
+
+        try (Statement stmt = DatabaseConnection.getConnection().createStatement();
+             ResultSet rs = stmt.executeQuery(sql)) {
+            while (rs.next()) {
+                model.addRow(new Object[]{
+                        rs.getInt("ID_Izvodjenja"),
+                        rs.getString("Eksperiment"),
+                        rs.getString("Laboratorija"),
+                        rs.getDate("Datum")
+                });
+            }
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(this, "Greška pri čitanju iz MySQL-a: " + e.getMessage(), "Greška", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+
+    private void prikaziMongoDBDetalje(int idIzvodjenja) {
+        Document doc = MongoConnection.pronadjiRezultat(idIzvodjenja);
+
+        if (doc != null) {
+            StringBuilder sb = new StringBuilder();
+
+            sb.append("==================================================\n");
+            sb.append("   DETALJAN NAUČNI IZVEŠTAJ (ID: ").append(doc.getInteger("izvodjenje_id")).append(")\n");
+            sb.append("==================================================\n\n");
+
+            // 1. Izvlačenje ugnježdenog objekta "eksperiment"
+            Document eksp = (Document) doc.get("eksperiment");
+            if (eksp != null) {
+                sb.append("--- EKSPERIMENT ---\n");
+                sb.append("• Naziv: ").append(eksp.getString("naziv")).append("\n");
+                sb.append("• Tip: ").append(eksp.getString("tip")).append("\n");
+
+                Document teorija = (Document) eksp.get("naucna_teorija");
+                if (teorija != null) {
+                    sb.append("• Naučna teorija: ").append(teorija.getString("naziv")).append("\n");
+                    sb.append("  Opis teorije: ").append(teorija.getString("opis")).append("\n");
+                }
+                sb.append("\n");
+            }
+
+            // 2. Izvlačenje ugnježdenog objekta "laboratorija"
+            Document lab = (Document) doc.get("laboratorija");
+            if (lab != null) {
+                sb.append("--- LABORATORIJA ---\n");
+                sb.append("• Naziv: ").append(lab.getString("naziv")).append("\n");
+                sb.append("• Opis lokacije: ").append(lab.getString("lokacija_opis")).append("\n");
+                sb.append("• Koordinate: ").append(lab.getString("geografske_koordinate")).append("\n");
+                sb.append("• Nadmorska visina: ").append(lab.get("nadmorska_visina_m")).append(" m\n\n");
+            }
+
+            // 3. Izvlačenje niza (Array-a) "opservacije"
+            List<Document> opservacije = doc.getList("opservacije", Document.class);
+            if (opservacije != null && !opservacije.isEmpty()) {
+                sb.append("--- REZULTATI OPSERVACIJA ---\n");
+                for (Document ops : opservacije) {
+                    sb.append("• ID Opservacije: ").append(ops.get("opservacija_id")).append("\n");
+                    sb.append("  Broj ekspozicija: ").append(ops.get("broj_ekspozicija")).append("\n");
+                    sb.append("  Izmerena magnituda: ").append(ops.get("izmerena_magnituda")).append("\n");
+                    sb.append("  SNR (Signal/Šum): ").append(ops.get("snr")).append("\n");
+                    sb.append("  Kvalitet podataka: ").append(ops.getString("kvalitet_podataka")).append("\n");
+                    sb.append("  Napomena: ").append(ops.getString("napomena")).append("\n");
+
+                    // Nebeski objekat unutar opservacije
+                    Document objekat = (Document) ops.get("nebeski_objekat");
+                    if (objekat != null) {
+                        sb.append("  -> Posmatrani objekat: ").append(objekat.getString("naucni_naziv")).append("\n");
+                        sb.append("     Tip objekta: ").append(objekat.getString("tip")).append("\n");
+                        sb.append("     Lokacija: ").append(objekat.getString("lokacija_u_svemiru")).append("\n");
+                        sb.append("     Udaljenost: ").append(objekat.get("udaljenost_od_zemlje_sg")).append(" sg\n");
+                    }
+                    sb.append("--------------------------------------------------\n");
+                }
+            }
+
+            txtMongoDetalji.setText(sb.toString());
+            txtMongoDetalji.setCaretPosition(0); // Automatski skroluje na početak teksta
+        } else {
+            txtMongoDetalji.setText("""
+                // NEMA PODATAKA
+                U MongoDB kolekciji 'eksperimenti' 
+                ne postoji dokument sa poljem "izvodjenje_id": """ + idIzvodjenja);
         }
     }
 }
